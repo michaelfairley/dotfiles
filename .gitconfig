@@ -1,0 +1,24 @@
+[user]
+	name = Michael Fairley
+	email = michaelfairley@gmail.com
+
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+
+[alias]
+	caach = commit -a --amend -C HEAD
+	cam = commit -a -m
+	co = checkout
+	p = push
+	d = diff
+	ds = diff --staged
+	t = status
+[core]
+	excludesfile = /Users/michaelfairley/.gitignore
+[push]
+	default = current
