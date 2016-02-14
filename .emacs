@@ -19,12 +19,20 @@
 	     '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
+; removing gui noise
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
 ; startup
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 (setq inhibit-startup-echo-area-message "michaelfairley")
 
 (setq compilation-always-kill t)
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 (setq company-idle-delay 0.2)
 (setq company-minimum-prefix-length 2)
