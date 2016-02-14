@@ -38,9 +38,7 @@
 (setq company-minimum-prefix-length 2)
 
 ; rust
-
-(setq racer-cmd "/Users/michaelfairley/p/racer/target/release/racer")
-(setq racer-rust-src-path "/Users/michaelfairley/p/rust/src")
+(setq racer-rust-src-path "/Users/michaelfairley/os/rust/src")
 
 (defun rust-cargo-run ()
   (interactive)
