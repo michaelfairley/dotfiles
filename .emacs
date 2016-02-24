@@ -43,7 +43,7 @@
 (defun rust-cargo-run ()
   (interactive)
   (let ((default-directory (locate-dominating-file default-directory "Cargo.toml")))
-    (compile "cargo run")))
+    (compile "CARGO_TARGET_DIR=/tmp/target-emacs cargo run")))
 
 (add-hook 'rust-mode-hook
           '(lambda ()
