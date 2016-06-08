@@ -40,11 +40,6 @@
 ; rust
 (setq racer-rust-src-path "/Users/michaelfairley/os/rust/src")
 
-(defun rust-cargo-run ()
-  (interactive)
-  (let ((default-directory (locate-dominating-file default-directory "Cargo.toml")))
-    (compile "CARGO_TARGET_DIR=/tmp/target-emacs cargo run")))
-
 (add-hook 'rust-mode-hook
           '(lambda ()
              (racer-mode)
@@ -52,6 +47,6 @@
              (company-mode)
              (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
              (flycheck-mode)
-             (local-set-key (kbd "C-x C-r") #'rust-cargo-run)
+             (cargo-minor-mode)
              (local-set-key (kbd "M-.") #'racer-find-definition)
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
