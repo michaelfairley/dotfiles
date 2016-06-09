@@ -37,6 +37,15 @@
 (setq company-idle-delay 0.2)
 (setq company-minimum-prefix-length 2)
 
+; compliation
+; From http://stackoverflow.com/questions/1292936/line-wrapping-within-emacs-compilation-buffer
+(defun compilation-mode-no-truncate-hook ()
+  (setq truncate-lines nil)
+  (set (make-local-variable 'truncate-partial-width-windows) nil))
+(add-hook 'compilation-mode-hook 'compilation-mode-no-truncate-hook)
+
+(setq compilation-ask-about-save nil)
+
 ; rust
 (setq racer-rust-src-path "/Users/michaelfairley/os/rust/src")
 
