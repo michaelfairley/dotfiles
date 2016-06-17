@@ -41,6 +41,9 @@
 (setq company-idle-delay 0.2)
 (setq company-minimum-prefix-length 2)
 
+; windows
+(windmove-default-keybindings)
+
 ; compliation
 ; From http://stackoverflow.com/questions/1292936/line-wrapping-within-emacs-compilation-buffer
 (defun compilation-mode-no-truncate-hook ()
