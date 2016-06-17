@@ -25,6 +25,8 @@
 
 (show-paren-mode 1)
 
+(setq require-final-newline t)
+
 ; removing gui noise
 (menu-bar-mode -1)
 (tool-bar-mode -1)
