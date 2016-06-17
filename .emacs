@@ -23,6 +23,8 @@
 (autoload 'zap-up-to-char "misc" "Kill up to, but not including ARGth occurrence of CHAR." t)
 (global-set-key (kbd "M-z") 'zap-up-to-char)
 
+(show-paren-mode 1)
+
 ; removing gui noise
 (menu-bar-mode -1)
 (tool-bar-mode -1)
