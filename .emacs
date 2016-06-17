@@ -19,6 +19,8 @@
 	     '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
+(setq load-prefer-newer t)
+
 ; editing
 (autoload 'zap-up-to-char "misc" "Kill up to, but not including ARGth occurrence of CHAR." t)
 (global-set-key (kbd "M-z") 'zap-up-to-char)
