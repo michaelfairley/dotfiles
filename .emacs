@@ -29,6 +29,8 @@
 
 (setq require-final-newline t)
 
+(global-set-key (kbd "M-;") 'comment-dwim-2)
+
 ; removing gui noise
 (menu-bar-mode -1)
 (tool-bar-mode -1)
