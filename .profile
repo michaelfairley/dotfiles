@@ -10,3 +10,4 @@ if which rbenv > /dev/null; then
 fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export RUST_BACKTRACE=1
