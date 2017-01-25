@@ -102,3 +102,5 @@
              (define-key cargo-minor-mode-map (kbd "C-c C-c C-b") 'cargo-process-fast-build)
              (local-set-key (kbd "M-.") #'racer-find-definition)
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
+(push '("\\*Cargo Run\\*" . (nil (reusable-frames . t))) display-buffer-alist)
+(push '("\\*Cargo Fast Build\\*" . (nil (reusable-frames . t))) display-buffer-alist)
