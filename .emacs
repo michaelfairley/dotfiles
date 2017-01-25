@@ -5,6 +5,11 @@
 
 ; whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'html-mode-hook
+          '(lambda ()
+             (remove-hook 'before-save-hook 'delete-trailing-whitespace)))
+
+
 
 (setq-default indent-tabs-mode nil)
 (setq tab-width 2)
