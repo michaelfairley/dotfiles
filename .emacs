@@ -87,10 +87,6 @@
 ; rust
 (setq racer-rust-src-path "/Users/michaelfairley/os/rust/src")
 
-(defun cargo-process-fast-build ()
-  (interactive)
-  (cargo-process--start "Fast Build" "cargo rustc -Zno-trans"))
-
 (add-hook 'rust-mode-hook
           '(lambda ()
              (racer-mode)
@@ -99,8 +95,7 @@
              (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
              (flycheck-mode)
              (cargo-minor-mode)
-             (define-key cargo-minor-mode-map (kbd "C-c C-c C-b") 'cargo-process-fast-build)
              (local-set-key (kbd "M-.") #'racer-find-definition)
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (push '("\\*Cargo Run\\*" . (nil (reusable-frames . t))) display-buffer-alist)
-(push '("\\*Cargo Fast Build\\*" . (nil (reusable-frames . t))) display-buffer-alist)
+(push '("\\*Cargo Build\\*" . (nil (reusable-frames . t))) display-buffer-alist)
