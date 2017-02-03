@@ -99,3 +99,7 @@
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (push '("\\*Cargo Run\\*" . (nil (reusable-frames . t))) display-buffer-alist)
 (push '("\\*Cargo Build\\*" . (nil (reusable-frames . t))) display-buffer-alist)
+
+(add-hook 'glsl-mode-hook
+          '(lambda ()
+             (cargo-minor-mode)))
