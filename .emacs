@@ -97,8 +97,11 @@
              (cargo-minor-mode)
              (local-set-key (kbd "M-.") #'racer-find-definition)
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
-(push '("\\*Cargo Run\\*" . (nil (reusable-frames . t))) display-buffer-alist)
 (push '("\\*Cargo Build\\*" . (nil (reusable-frames . t))) display-buffer-alist)
+
+(defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
+(defun cargo-process--start (name command)
+  (cargo-process--start2 "Build" command))
 
 (add-hook 'glsl-mode-hook
           '(lambda ()
