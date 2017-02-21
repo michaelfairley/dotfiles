@@ -99,9 +99,10 @@
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (push '("\\*Cargo Build\\*" . (nil (reusable-frames . t))) display-buffer-alist)
 
-(defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
-(defun cargo-process--start (name command)
-  (cargo-process--start2 "Build" command))
+(with-eval-after-load "cargo-process"
+  (defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
+  (defun cargo-process--start (name command)
+    (cargo-process--start2 "Build" command)))
 
 (add-hook 'glsl-mode-hook
           '(lambda ()
