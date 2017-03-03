@@ -10,4 +10,5 @@ if which rbenv > /dev/null; then
 fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/Library/Application Support/itch/bin:$PATH"
 export RUST_BACKTRACE=1
