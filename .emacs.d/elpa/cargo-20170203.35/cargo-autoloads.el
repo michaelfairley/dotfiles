@@ -1,9 +1,9 @@
 ;;; cargo-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "cargo" "cargo.el" (22512 62530 0 0))
+;;;### (autoloads nil "cargo" "cargo.el" (22729 41416 0 0))
 ;;; Generated autoloads from cargo.el
 
 (autoload 'cargo-minor-mode "cargo" "\
@@ -13,7 +13,7 @@ Cargo minor mode. Used to hold keybindings for cargo-mode
 
 ;;;***
 
-;;;### (autoloads nil "cargo-process" "cargo-process.el" (22512 62530
+;;;### (autoloads nil "cargo-process" "cargo-process.el" (22729 41416
 ;;;;;;  0 0))
 ;;; Generated autoloads from cargo-process.el
 
@@ -45,6 +45,13 @@ Cargo: Build this project's and its dependencies' documentation.
 
 \(fn)" t nil)
 
+(autoload 'cargo-process-doc-open "cargo-process" "\
+Run the Cargo doc command with the --open switch.
+With the prefix argument, modify the command's invocation.
+Cargo: Open this project's documentation.
+
+\(fn)" t nil)
+
 (autoload 'cargo-process-new "cargo-process" "\
 Run the Cargo new command.
 With the prefix argument, modify the command's invocation.
@@ -69,6 +76,13 @@ With the prefix argument, modify the command's invocation.
 Cargo: Build and execute src/main.rs.
 
 \(fn)" t nil)
+
+(autoload 'cargo-process-run-bin "cargo-process" "\
+Run the Cargo run command --bin <name>.
+With the prefix argument, modify the command's invocation.
+Cargo: Build and execute a specific binary
+
+\(fn COMMAND)" t nil)
 
 (autoload 'cargo-process-run-example "cargo-process" "\
 Run the Cargo run command --example <name>.
@@ -143,7 +157,7 @@ Run the last cargo-process command.
 
 ;;;***
 
-;;;### (autoloads nil nil ("cargo-pkg.el") (22512 62530 398506 0))
+;;;### (autoloads nil nil ("cargo-pkg.el") (22729 41416 0 0))
 
 ;;;***
 

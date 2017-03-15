@@ -1,4 +1,4 @@
-;;; cargo-process.el --- Cargo Process Major Mode
+;;; cargo-process.el --- Cargo Process Major Mode -*-lexical-binding: t-*-
 
 ;; Copyright (C) 2015  Kevin W. van Rooijen
 
@@ -27,10 +27,12 @@
 ;;  * cargo-process-build              - Compile the current project.
 ;;  * cargo-process-clean              - Remove the target directory.
 ;;  * cargo-process-doc                - Build this project's and its dependencies' documentation.
+;;  * cargo-process-doc-open           - Open this project's documentation.
 ;;  * cargo-process-new                - Create a new cargo project.
 ;;  * cargo-process-init               - Create a new cargo project inside an existing directory.
 ;;  * cargo-process-run                - Build and execute src/main.rs.
 ;;  * cargo-process-run-example        - Build and execute with --example <name>.
+;;  * cargo-process-run-bin            - Build and execute a specific binary.
 ;;  * cargo-process-search             - Search registry for crates.
 ;;  * cargo-process-test               - Run all unit tests.
 ;;  * cargo-process-update             - Update dependencies listed in Cargo.lock.
@@ -52,6 +54,11 @@
   "Cargo Process group."
   :prefix "cargo-process-"
   :group 'cargo)
+
+(defcustom cargo-process--custom-path-to-bin nil
+  "Custom path to the directory containing the cargo executable"
+  :type 'directory
+  :group 'cargo-process)
 
 (defvar cargo-process-mode-map
   (nconc (make-sparse-keymap) compilation-mode-map)
@@ -144,9 +151,12 @@
 
 (defun cargo-process--start (name command)
   "Start the Cargo process NAME with the cargo command COMMAND."
-  (let ((buffer (concat "*Cargo " name "*"))
-        (command (cargo-process--maybe-read-command command))
-        (project-root (cargo-process--project-root)))
+  (let* ((buffer (concat "*Cargo " name "*"))
+         (path cargo-process--custom-path-to-bin)
+         (path (and path (file-name-as-directory path)))
+         (command (cargo-process--maybe-read-command (concat path command)))
+         (project-root (cargo-process--project-root))
+         (default-directory (or project-root default-directory)))
     (save-some-buffers (not compilation-ask-about-save)
                        (lambda ()
                          (and project-root
@@ -235,6 +245,14 @@ Cargo: Build this project's and its dependencies' documentation."
   (cargo-process--start "Doc" "cargo doc"))
 
 ;;;###autoload
+(defun cargo-process-doc-open ()
+  "Run the Cargo doc command with the --open switch.
+With the prefix argument, modify the command's invocation.
+Cargo: Open this project's documentation."
+  (interactive)
+  (cargo-process--start "Doc" "cargo doc --open"))
+
+;;;###autoload
 (defun cargo-process-new (name &optional bin)
   "Run the Cargo new command.
 With the prefix argument, modify the command's invocation.
@@ -264,6 +282,15 @@ With the prefix argument, modify the command's invocation.
 Cargo: Build and execute src/main.rs."
   (interactive)
   (cargo-process--start "Run" "cargo run"))
+
+;;;###autoload
+(defun cargo-process-run-bin (command)
+  "Run the Cargo run command --bin <name>.
+With the prefix argument, modify the command's invocation.
+Cargo: Build and execute a specific binary"
+  (interactive)
+  (cargo-process--start (concat "Run " command) 
+                        (concat "cargo run --bin " command)))
 
 ;;;###autoload
 (defun cargo-process-run-example (command)
@@ -297,7 +324,7 @@ Cargo: Run the tests."
 With the prefix argument, modify the command's invocation.
 Cargo: Run the tests."
   (interactive)
-  (cargo-process--start "Test" (format "cargo test --test %s %s"
+  (cargo-process--start "Test" (format "cargo test %s::%s"
                                        (file-name-base)
                                        (cargo-process--get-current-test))))
 
@@ -307,7 +334,7 @@ Cargo: Run the tests."
 With the prefix argument, modify the command's invocation.
 Cargo: Run the tests."
   (interactive)
-  (cargo-process--start "Test" (concat "cargo test --test " (file-name-base))))
+  (cargo-process--start "Test" (concat "cargo test " (file-name-base))))
 
 ;;;###autoload
 (defun cargo-process-update ()
