@@ -102,10 +102,15 @@
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (push '("\\*Cargo Build\\*" . (nil (reusable-frames . t))) display-buffer-alist)
 
+(defun cargo-process-build-lib ()
+  (interactive)
+  (cargo-process--start "Build lib" "cargo build --lib"))
+
 (with-eval-after-load "cargo-process"
   (defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
   (defun cargo-process--start (name command)
-    (cargo-process--start2 "Build" command)))
+    (cargo-process--start2 "Build" command))
+  (define-key cargo-minor-mode-map (kbd "C-c C-c C-v") 'cargo-process-build-lib))
 
 (add-hook 'glsl-mode-hook
           '(lambda ()
