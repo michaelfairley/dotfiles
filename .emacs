@@ -109,7 +109,9 @@
 (with-eval-after-load "cargo-process"
   (defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
   (defun cargo-process--start (name command)
-    (cargo-process--start2 "Build" command))
+    (cargo-process--start2 "Build" command)))
+
+(with-eval-after-load "cargo"
   (define-key cargo-minor-mode-map (kbd "C-c C-c C-v") 'cargo-process-build-lib))
 
 (add-hook 'glsl-mode-hook
