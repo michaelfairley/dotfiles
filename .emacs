@@ -99,10 +99,11 @@
              (local-set-key (kbd "M-.") #'racer-find-definition)
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (push '("\\*Cargo Build\\*" . (nil (reusable-frames . t))) display-buffer-alist)
+(push '("\\*Cargo Build lib\\*" . (nil (reusable-frames . t))) display-buffer-alist)
 
 (defun cargo-process-build-lib ()
   (interactive)
-  (cargo-process--start "Build lib" "cargo build --lib"))
+  (cargo-process--start2 "Build lib" "cargo build --lib"))
 
 (with-eval-after-load "cargo-process"
   (defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
