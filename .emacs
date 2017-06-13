@@ -88,8 +88,6 @@
       )
 
 ; rust
-(setq racer-rust-src-path "/Users/michaelfairley/os/rust/src")
-
 (add-hook 'rust-mode-hook
           '(lambda ()
              (racer-mode)
