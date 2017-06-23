@@ -105,6 +105,8 @@
   (interactive)
   (cargo-process--start2 "Build lib" "cargo build --lib"))
 
+(setenv "CARGO_INCREMENTAL" "1")
+
 (with-eval-after-load "cargo-process"
   (defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
   (defun cargo-process--start (name command)
