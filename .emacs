@@ -102,6 +102,7 @@
 (push '("\\*Cargo Run\\*" . (nil (reusable-frames . t))) display-buffer-alist)
 
 (setenv "CARGO_INCREMENTAL" "1")
+(setenv "RUST_BACKTRACE" "1")
 
 (with-eval-after-load "cargo-process"
   (defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
