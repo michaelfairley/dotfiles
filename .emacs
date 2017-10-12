@@ -121,6 +121,9 @@
 (add-hook 'glsl-mode-hook
           '(lambda ()
              (cargo-minor-mode)))
+
+(setq rust-match-angle-brackets nil)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
