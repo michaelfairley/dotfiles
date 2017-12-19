@@ -9177,22 +9177,19 @@ A valid Cargo target type is one of `lib', `bin', `example',
 
 This syntax checker requires Rust 1.15 or newer.  See URL
 `https://www.rust-lang.org'."
-  :command ("cargo" "rustc"
+  :command ("cargo"
+            (eval (if flycheck-rust-check-tests
+                      "test"
+                    "check"))
+            (eval (when flycheck-rust-check-tests
+                    "--no-run"))
             (eval (when flycheck-rust-crate-type
                     (concat "--" flycheck-rust-crate-type)))
             ;; All crate targets except "lib" need a binary name
             (eval (when (and flycheck-rust-crate-type
                              (not (string= flycheck-rust-crate-type "lib")))
                     flycheck-rust-binary-name))
-            "--message-format=json"
-            (eval flycheck-cargo-rustc-args)
-            "--"
-            ;; Passing the "--test" flag when the target is a test binary or
-            ;; bench is unnecessary and triggers an error.
-            (eval (when flycheck-rust-check-tests
-                    (unless (member flycheck-rust-crate-type '("test" "bench"))
-                      "--test")))
-            (eval flycheck-rust-args))
+            "--message-format=json")
   :error-parser flycheck-parse-cargo-rustc
   :error-filter flycheck-rust-error-filter
   :error-explainer flycheck-rust-error-explainer
