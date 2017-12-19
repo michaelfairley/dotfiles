@@ -125,6 +125,11 @@
 
 (setq rust-match-angle-brackets nil)
 
+(require 'ansi-color)
+(defun my-colorize-compilation-buffer ()
+  (ansi-color-apply-on-region compilation-filter-start (point-max)))
+(add-hook 'compilation-filter-hook 'my-colorize-compilation-buffer)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
