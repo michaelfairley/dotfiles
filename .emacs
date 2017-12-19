@@ -20,6 +20,7 @@
 (setq rust-indent-offset 2)
 
 (global-set-key (kbd "C-j") 'newline-and-indent)
+(global-set-key (kbd "C-c C-c v") 'recompile)
 
 ; package
 (require 'package)
