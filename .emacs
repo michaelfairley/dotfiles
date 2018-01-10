@@ -125,6 +125,9 @@
 
 (setq rust-match-angle-brackets nil)
 
+; ruby
+(push '("\\*rspec-compilation\\*" . (nil (reusable-frames . t))) display-buffer-alist)
+
 (require 'ansi-color)
 (defun my-colorize-compilation-buffer ()
   (ansi-color-apply-on-region compilation-filter-start (point-max)))
@@ -137,7 +140,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (markdown-mode racer haxe-mode glsl-mode flycheck-rust exec-path-from-shell deferred company comment-dwim-2 cargo))))
+    (haml-mode markdown-mode racer haxe-mode glsl-mode flycheck-rust exec-path-from-shell deferred company comment-dwim-2 cargo))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
