@@ -128,6 +128,11 @@
 
 ; ruby
 (push '("\\*rspec-compilation\\*" . (nil (reusable-frames . t))) display-buffer-alist)
+(add-hook 'haml-mode-hook
+          '(lambda ()
+             (rspec-verifiable-mode)))
+
+
 
 (require 'ansi-color)
 (defun my-colorize-compilation-buffer ()
