@@ -10,7 +10,8 @@ if which rbenv > /dev/null; then
     eval "$(rbenv init -)"
 fi
 
+eval "$(direnv hook bash)"
+
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="./bin:$PATH"
 export PATH="$HOME/Library/Application Support/itch/bin:$PATH"
 export RUST_BACKTRACE=1
