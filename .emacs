@@ -19,6 +19,7 @@
 (setq c-basic-offset 2)
 (setq rust-indent-offset 2)
 (setq css-indent-offset 2)
+(setq js-indent-level 2)
 
 (global-set-key (kbd "C-j") 'newline-and-indent)
 (global-set-key (kbd "C-c C-c v") 'recompile)
