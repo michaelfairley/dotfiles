@@ -42,6 +42,8 @@
 
 (global-set-key (kbd "M-;") 'comment-dwim-2)
 
+(global-set-key (kbd "C-;") 'avy-goto-char)
+
 ; removing gui noise
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -132,6 +134,7 @@
 (add-hook 'haml-mode-hook
           '(lambda ()
              (rspec-verifiable-mode)))
+(setq ruby-deep-indent-paren nil)
 
 
 
@@ -147,7 +150,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (haml-mode markdown-mode racer haxe-mode glsl-mode flycheck-rust exec-path-from-shell deferred company comment-dwim-2 cargo))))
+    (avy haml-mode markdown-mode racer haxe-mode glsl-mode flycheck-rust exec-path-from-shell deferred company comment-dwim-2 cargo))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
