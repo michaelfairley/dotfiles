@@ -127,6 +127,10 @@
           '(lambda ()
              (cargo-minor-mode)))
 
+(add-hook 'toml-mode-hook
+          '(lambda ()
+             (cargo-minor-mode)))
+
 (setq rust-match-angle-brackets nil)
 
 ; ruby
