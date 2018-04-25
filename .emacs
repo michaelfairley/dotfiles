@@ -42,7 +42,7 @@
 
 (global-set-key (kbd "M-;") 'comment-dwim-2)
 
-(global-set-key (kbd "C-;") 'avy-goto-char)
+(global-set-key (kbd "C-;") 'avy-goto-char-2)
 
 ; removing gui noise
 (menu-bar-mode -1)
