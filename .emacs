@@ -115,10 +115,10 @@
     (cargo-process--start2 "Build" command))
   (defun cargo-process-build-lib ()
     (interactive)
-    (cargo-process--start "Build lib" "cargo build --lib"))
+    (cargo-process--start "Build lib" "build --lib"))
   (defun cargo-process-run ()
     (interactive)
-    (cargo-process--start2 "Run" "cargo run")))
+    (cargo-process--start2 "Run" "run")))
 
 (with-eval-after-load "cargo"
   (define-key cargo-minor-mode-map (kbd "C-c C-c C-v") 'cargo-process-build-lib))
@@ -154,7 +154,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (toml-mode avy haml-mode markdown-mode racer haxe-mode glsl-mode flycheck-rust exec-path-from-shell deferred company comment-dwim-2 cargo))))
+    (rspec-mode toml-mode avy haml-mode markdown-mode racer haxe-mode glsl-mode flycheck-rust exec-path-from-shell deferred company comment-dwim-2 cargo))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
