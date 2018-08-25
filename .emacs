@@ -59,7 +59,7 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
-(setq company-idle-delay 0.2)
+(setq company-idle-delay nil)
 (setq company-minimum-prefix-length 2)
 
 ; windows
@@ -101,7 +101,6 @@
              (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
              (flycheck-mode)
              (cargo-minor-mode)
-             (local-set-key (kbd "M-.") #'racer-find-definition)
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (push '("\\*Cargo Build\\*" . (nil (reusable-frames . t))) display-buffer-alist)
 (push '("\\*Cargo Run\\*" . (nil (reusable-frames . t))) display-buffer-alist)
