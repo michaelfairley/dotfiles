@@ -1,6 +1,8 @@
 alias g="git"
 alias be="bundle exec"
 
+export EDITOR="emacs -nw"
+
 export RUST_BACKTRACE=1
 
 if command -v brew > /dev/null && [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
