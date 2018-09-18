@@ -6,3 +6,4 @@
 .emacs.d/auto-save-list
 .emacs.d/elpa/archives
 .emacs.d/elpa/gnupg
+*.blend[0-9]

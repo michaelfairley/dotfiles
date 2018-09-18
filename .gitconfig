@@ -19,7 +19,7 @@
 	ds = diff --staged
 	t = status
 [core]
-	excludesfile = /Users/michaelfairley/.gitignore
+	excludesfile = ~/.gitignore
 [push]
 	default = current
 [filter "lfs"]
