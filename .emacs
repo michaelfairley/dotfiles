@@ -110,8 +110,8 @@
 
 (with-eval-after-load "cargo-process"
   (defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
-  (defun cargo-process--start (name command)
-    (cargo-process--start2 "Build" command))
+  (defun cargo-process--start (name command &optional last-cmd)
+    (cargo-process--start2 "Build" command last-cmd))
   (defun cargo-process-build-lib ()
     (interactive)
     (cargo-process--start "Build lib" "build --lib"))
