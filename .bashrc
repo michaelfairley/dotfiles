@@ -18,8 +18,12 @@ if command -v direnv > /dev/null; then
     eval "$(direnv hook bash)"
 fi
 
+export PATH="$HOME/.cargo/bin:$PATH"
+
 OS="$(uname -s)"
 if test "$OS" = "Darwin"; then
-    export PATH="$HOME/.cargo/bin:$PATH"
     export PATH="$HOME/Library/Application Support/itch/bin:$PATH"
 fi
+
+export PATH="$HOME/.node_modules/bin:$PATH"
+export npm_config_prefix=~/.node_modules
