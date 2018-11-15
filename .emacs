@@ -4,14 +4,13 @@
 (setq ido-enable-flex-matching t)
 
 ; whitespace
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-(add-hook 'html-mode-hook
-          '(lambda ()
-             (remove-hook 'before-save-hook 'delete-trailing-whitespace)))
-(add-hook 'markdown-mode-hook
-          '(lambda ()
-             (remove-hook 'before-save-hook 'delete-trailing-whitespace)))
 
+(defun nuke-trailing ()
+  (add-hook 'before-save-hook 'delete-trailing-whitespace nil t))
+(add-hook 'rust-mode-hook 'nuke-trailing)
+(add-hook 'ruby-mode-hook 'nuke-trailing)
+(add-hook 'toml-mode-hook 'nuke-trailing)
+(add-hook 'haml-mode-hook 'nuke-trailing)
 
 
 (setq-default indent-tabs-mode nil)
