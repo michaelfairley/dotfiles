@@ -53,7 +53,10 @@
 (setq inhibit-startup-message t)
 (setq inhibit-startup-echo-area-message "michaelfairley")
 
+; compilation
 (setq compilation-always-kill t)
+(push '("\\*compilation\\*" . (nil (reusable-frames . t))) display-buffer-alist)
+
 
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
