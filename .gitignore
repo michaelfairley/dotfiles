@@ -7,3 +7,4 @@
 .emacs.d/elpa/archives
 .emacs.d/elpa/gnupg
 *.blend[0-9]
+.dir-locals-2.el
