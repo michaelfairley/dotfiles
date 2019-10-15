@@ -20,6 +20,7 @@
 	t = status
 [core]
 	excludesfile = ~/.gitignore
+	pager = /usr/share/git/diff-highlight/diff-highlight | less
 [push]
 	default = current
 [filter "lfs"]
