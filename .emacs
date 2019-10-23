@@ -109,6 +109,7 @@
 
 (setenv "CARGO_INCREMENTAL" "1")
 (setenv "RUST_BACKTRACE" "full")
+(set 'cargo-process--enable-rust-backtrace 1)
 
 (with-eval-after-load "cargo-process"
   (defalias 'cargo-process--start2 (symbol-function 'cargo-process--start))
