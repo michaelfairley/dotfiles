@@ -97,7 +97,7 @@
 ; rust
 (add-hook 'rust-mode-hook
           '(lambda ()
-             (racer-mode)
+             (lsp)
              (eldoc-mode)
              (company-mode)
              (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
@@ -157,7 +157,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (terraform-mode toml-mode deferred))))
+ '(package-selected-packages
+   (quote
+    (lsp-ui company-lsp lsp-mode terraform-mode direnv rg lua-mode magit rspec-mode toml-mode avy haml-mode markdown-mode racer haxe-mode glsl-mode flycheck-rust exec-path-from-shell deferred company comment-dwim-2 cargo))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
