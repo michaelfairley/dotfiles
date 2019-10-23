@@ -6,5 +6,6 @@
 .emacs.d/auto-save-list
 .emacs.d/elpa/archives
 .emacs.d/elpa/gnupg
+.emacs.d/transient
 *.blend[0-9]
 .dir-locals-2.el
