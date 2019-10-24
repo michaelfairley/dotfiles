@@ -37,6 +37,7 @@ brew "terraform"
 brew "rustup-init"
 tap "heroku/brew"
 brew "heroku"
+cask "iterm2"
 
 # Art
 cask "paintbrush"
