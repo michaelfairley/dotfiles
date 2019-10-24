@@ -153,6 +153,13 @@
   (ansi-color-apply-on-region compilation-filter-start (point-max)))
 (add-hook 'compilation-filter-hook 'my-colorize-compilation-buffer)
 
+; appearance
+(set-face-attribute 'default nil
+                    :family "Hack"
+                    :height 120
+                    :weight 'normal)
+(load-theme 'one-light t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
