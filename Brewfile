@@ -38,6 +38,7 @@ brew "rustup-init"
 tap "heroku/brew"
 brew "heroku"
 cask "iterm2"
+brew "direnv"
 
 # Art
 cask "paintbrush"

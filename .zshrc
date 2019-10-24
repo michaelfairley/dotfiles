@@ -8,6 +8,10 @@ fi
 autoload -U compinit && compinit
 
 
+if command -v direnv > /dev/null; then
+    eval "$(direnv hook zsh)"
+fi
+
 export PROMPT="[%1~]$ "
 
 source .bashrc
