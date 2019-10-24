@@ -7,4 +7,6 @@ if type brew &>/dev/null; then
 fi
 
 
+export PROMPT="[%1~]$ "
+
 source .bashrc

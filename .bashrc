@@ -5,7 +5,7 @@ export EDITOR="emacs -nw"
 
 export RUST_BACKTRACE=1
 
-if command -v brew > /dev/null && [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+if command -v brew > /dev/null && [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ] && [ -n "$BASH" ]; then
     . `brew --prefix`/etc/bash_completion.d/git-completion.bash
     __git_complete g __git_main
 fi
