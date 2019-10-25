@@ -159,6 +159,9 @@
                     :height (pcase system-type ('gnu/linux 100) ('darwin 120))
                     :weight 'normal)
 (load-theme 'one-light t)
+(custom-theme-set-faces
+ 'one-light
+ '(default ((t (:background "#white")))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
