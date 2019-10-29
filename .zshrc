@@ -14,4 +14,4 @@ fi
 
 export PROMPT="[%1~]$ "
 
-source .bashrc
+source ~/.bashrc
