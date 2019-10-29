@@ -5,6 +5,7 @@ brew "mas"
 # Command-line basics
 brew "ripgrep"
 brew "wget"
+brew "watch"
 
 # Everyday apps
 cask "google-chrome"
