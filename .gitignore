@@ -9,3 +9,4 @@
 .emacs.d/transient
 *.blend[0-9]
 .dir-locals-2.el
+.emacs.d/.lsp-session-v1
