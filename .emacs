@@ -11,6 +11,8 @@
 (add-hook 'ruby-mode-hook 'nuke-trailing)
 (add-hook 'toml-mode-hook 'nuke-trailing)
 (add-hook 'haml-mode-hook 'nuke-trailing)
+(add-hook 'scss-mode-hook 'nuke-trailing)
+(add-hook 'js-mode-hook 'nuke-trailing)
 
 
 (setq-default indent-tabs-mode nil)
@@ -156,7 +158,7 @@
 ; appearance
 (set-face-attribute 'default nil
                     :family "Hack"
-                    :height (pcase system-type ('gnu/linux 100) ('darwin 120))
+                    :height (pcase system-type ('gnu/linux 80) ('darwin 120))
                     :weight 'normal)
 (load-theme 'one-light t)
 (custom-theme-set-faces
