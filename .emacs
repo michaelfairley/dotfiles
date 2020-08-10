@@ -13,6 +13,7 @@
 (add-hook 'haml-mode-hook 'nuke-trailing)
 (add-hook 'scss-mode-hook 'nuke-trailing)
 (add-hook 'js-mode-hook 'nuke-trailing)
+(add-hook 'typescript-mode-hook 'nuke-trailing)
 
 
 (setq-default indent-tabs-mode nil)
@@ -21,6 +22,7 @@
 (setq rust-indent-offset 2)
 (setq css-indent-offset 2)
 (setq js-indent-level 2)
+(setq typescript-indent-level 2)
 
 (global-set-key (kbd "C-j") 'newline-and-indent)
 (global-set-key (kbd "C-c C-c v") 'recompile)
@@ -158,12 +160,12 @@
 ; appearance
 (set-face-attribute 'default nil
                     :family "Hack"
-                    :height (pcase system-type ('gnu/linux 80) ('darwin 120))
+                    :height (pcase system-type ('gnu/linux 115) ('darwin 120))
                     :weight 'normal)
 (load-theme 'one-light t)
 (custom-theme-set-faces
  'one-light
- '(default ((t (:background "#white")))))
+ '(default ((t (:background "white")))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
