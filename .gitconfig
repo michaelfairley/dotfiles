@@ -11,7 +11,7 @@
         pager = true
 
 [alias]
-	caach = commit -a --amend -C HEAD
+	caan = commit -a --amend --no-edit
 	cam = commit -a -m
 	co = checkout
 	p = push
