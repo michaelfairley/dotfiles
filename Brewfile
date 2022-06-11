@@ -1,50 +1,36 @@
-# -*- mode: ruby -*-
-
 brew "mas"
 
-# Command-line basics
 brew "ripgrep"
 brew "wget"
 brew "watch"
 
-# Everyday apps
 cask "google-chrome"
 cask "spotify"
-cask "gitter"
 cask "slack"
 cask "discord"
 cask "steam"
 
-# Utils
 cask "alfred"
-cask "authy"
 cask "dropbox"
-cask "keepassx"
 cask "keepingyouawake"
 mas "Divvy", id: 413857545
+cask "1password"
+cask "setapp"
+mas "Things 3", id: 904280696
+brew "tailscale"
 
-# Dev tools
 mas "Xcode", id: 497799835
 brew "git"
-brew "emacs"
-cask "emacs"
-brew "postgresql"
-cask "postgres"
-brew "cmake"
-brew "hub"
-brew "rbenv"
-brew "ruby-build"
 brew "terraform"
-brew "rustup-init"
-tap "heroku/brew"
-brew "heroku"
 cask "iterm2"
 brew "direnv"
+cask "emacs"
+brew "hub"
+brew "heroku/brew/heroku"
+brew "CrunchyData/brew/cb"
+cask "docker"
+brew "libpq"
+brew "postgresql"
+brew "asdf"
 
-# Art
-cask "paintbrush"
-cask "magicavoxel"
-
-# Fonts
-tap "homebrew/cask-fonts"
-cask "font-hack"
+cask "homebrew/cask-fonts/font-hack"

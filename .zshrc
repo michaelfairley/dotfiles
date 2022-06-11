@@ -14,4 +14,6 @@ fi
 
 export PROMPT="[%1~]$ "
 
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
 source ~/.bashrc
