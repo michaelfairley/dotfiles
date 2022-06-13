@@ -165,7 +165,7 @@
 (load-theme 'one-light t)
 (custom-theme-set-faces
  'one-light
- '(default ((t (:background "#white")))))
+ '(default ((t (:background "#ffffff")))))
 
 (require 'expand-region)
 (global-set-key (kbd "M-<up>") 'er/expand-region)
