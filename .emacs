@@ -1,3 +1,6 @@
+(global-unset-key (kbd "C-x C-c"))
+(global-set-key (kbd "C-x C-c C-c C-c") 'save-buffers-kill-terminal)
+
 ; ido
 (require 'ido)
 (ido-mode t)
