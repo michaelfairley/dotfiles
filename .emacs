@@ -163,7 +163,7 @@
 ; appearance
 (set-face-attribute 'default nil
                     :family "Hack"
-                    :height (pcase system-type ('gnu/linux 115) ('darwin 120))
+                    :height (pcase system-type ('gnu/linux 115) ('darwin 125))
                     :weight 'normal)
 (load-theme 'one-light t)
 (custom-theme-set-faces
