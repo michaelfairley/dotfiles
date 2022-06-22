@@ -32,5 +32,6 @@ cask "docker"
 brew "libpq"
 brew "postgresql"
 brew "asdf"
+cask "github"
 
 cask "homebrew/cask-fonts/font-hack"
