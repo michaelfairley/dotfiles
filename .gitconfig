@@ -20,7 +20,7 @@
 	t = status
 [core]
 	excludesfile = ~/.gitignore
-	pager = /opt/homebrew/Cellar/git/2.36.1/share/git-core/contrib/diff-highlight/diff-highlight | less
+	pager = /opt/homebrew/Cellar/git/2.38.1/share/git-core/contrib/diff-highlight/diff-highlight | less
 [push]
 	default = current
 [filter "lfs"]
