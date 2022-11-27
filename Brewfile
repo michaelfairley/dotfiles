@@ -18,6 +18,8 @@ cask "1password"
 cask "setapp"
 mas "Things 3", id: 904280696
 brew "tailscale"
+brew "magic-wormhole"
+mas "Tailscale", id: 1475387142
 
 mas "Xcode", id: 497799835
 brew "git"
@@ -32,7 +34,7 @@ tap "CrunchyData/brew"
 brew "CrunchyData/brew/cb"
 cask "docker"
 brew "libpq"
-brew "postgresql@15"
+brew "postgresql@15", link: true
 brew "asdf"
 cask "github"
 
