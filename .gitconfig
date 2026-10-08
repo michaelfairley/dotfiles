@@ -18,6 +18,7 @@
 	d = diff
 	ds = diff --staged
 	t = status
+	amend-to = "!f() { git commit --fixup=$1 && git rebase -i --autosquash $(git merge-base HEAD main)~1 $1; }; f"
 [core]
 	excludesfile = ~/.gitignore
 	pager = /opt/homebrew/Cellar/git/2.39.0/share/git-core/contrib/diff-highlight/diff-highlight | less
