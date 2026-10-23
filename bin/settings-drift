@@ -1,0 +1,105 @@
+#!/usr/bin/env python3
+"""Compare app settings files that mise merges into against the shared snippets.
+
+For every `merge` entry in mise.toml, reports:
+  - owned keys the app changed (the next `mise bootstrap` resets these),
+  - `merge = "missing"` defaults whose value differs on this machine,
+  - keys that only exist locally, minus the IGNORE list below.
+
+Run it with `mise run settings-drift` on each machine, then copy anything worth
+sharing into the matching snippets/ file.
+"""
+
+import json
+import sys
+import tomllib
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parent.parent
+
+# Local-only keys that are never worth sharing (machine paths, per-project
+# state, app bookkeeping). Each entry hides that key and everything under it.
+IGNORE = {
+    "~/.claude/settings.json": ["autoMode", "permissions.allow"],
+    "~/.codex/config.toml": [
+        "projects", "notice", "tui", "marketplaces", "notify", "desktop",
+        "shell_environment_policy", "mcp_servers.node_repl", "mcp_servers.computer-use",
+    ],
+    "~/.gemini/settings.json": ["security"],
+}
+
+
+def load(path):
+    text = path.read_text()
+    return tomllib.loads(text) if path.suffix == ".toml" else json.loads(text)
+
+
+def flatten(value, prefix=""):
+    """Map dotted key paths to leaf values; arrays count as leaves."""
+    if isinstance(value, dict) and value:
+        out = {}
+        for k, v in value.items():
+            out.update(flatten(v, f"{prefix}.{k}" if prefix else k))
+        return out
+    return {prefix: value}
+
+
+def under(path, prefixes):
+    return any(path == p or path.startswith(p + ".") for p in prefixes)
+
+
+def show(v):
+    s = json.dumps(v)
+    return s if len(s) <= 60 else s[:57] + "..."
+
+
+def merge_entries():
+    dotfiles = tomllib.loads((REPO / "mise.toml").read_text()).get("dotfiles", {})
+    targets = {}
+    for key, entry in dotfiles.items():
+        if isinstance(entry, dict) and entry.get("merge"):
+            target = key.rsplit("/", 1)[0]
+            targets.setdefault(target, []).append((REPO / entry["source"], entry["merge"]))
+    return targets
+
+
+def main():
+    found = False
+    for target, sources in merge_entries().items():
+        live_path = Path(target).expanduser()
+        if not live_path.exists():
+            print(f"{target}: missing (run `mise bootstrap`)\n")
+            continue
+        live = flatten(load(live_path))
+        owned, changed, defaults = set(), [], []
+        for source, mode in sources:
+            for k, v in flatten(load(source)).items():
+                owned.add(k)
+                if k in live and live[k] != v:
+                    (changed if mode is True else defaults).append((k, live[k], v))
+        extra = sorted(k for k in live if not under(k, owned) and not under(k, IGNORE.get(target, [])))
+
+        if not (changed or defaults or extra):
+            continue
+        found = True
+        print(target)
+        if changed:
+            print("  changed here; `mise bootstrap` will reset these unless you copy them back:")
+            for k, here, shared in changed:
+                print(f"    {k}: {show(here)}  (shared: {show(shared)})")
+        if defaults:
+            print("  defaults that differ here (left alone by bootstrap):")
+            for k, here, shared in defaults:
+                print(f"    {k}: {show(here)}  (shared default: {show(shared)})")
+        if extra:
+            print("  only on this machine (share it, or add to IGNORE in bin/settings-drift):")
+            for k in extra:
+                print(f"    {k}: {show(live[k])}")
+        print()
+    if not found:
+        print("All merged settings match the shared snippets.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -9,6 +9,11 @@
 # The snippets/ templates don't see config_root directly, so pass it through.
 dotfiles_dir = "{{ config_root }}"
 
+[tasks.settings-drift]
+description = "Show local changes to merged app settings that may belong in snippets/"
+tools.python = "3.13"
+run = "bin/settings-drift"
+
 [dotfiles]
 "~/.emacs" = { source = ".emacs" }
 "~/.emacs.d" = { source = ".emacs.d" }
