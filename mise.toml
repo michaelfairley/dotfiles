@@ -27,6 +27,68 @@ dotfiles_dir = "{{ config_root }}"
 [bootstrap.mise_shell_activate]
 zsh = true
 
+# macOS preferences. mise never deletes a preference, so removing a line here
+# leaves the current value; use `defaults delete <domain> <key>` to reset one.
+# Dock, Finder, and the menu bar pick up changes after
+# `killall Dock Finder SystemUIServer`.
+[bootstrap.macos.dock]
+autohide = true
+mru_spaces = false
+
+[bootstrap.macos.finder]
+show_all_files = true
+show_pathbar = true
+show_status_bar = true
+save_new_documents_to_cloud = false
+
+[bootstrap.macos.keyboard]
+key_repeat = 2
+initial_key_repeat = 15
+automatic_capitalization = false
+automatic_spelling_correction = false
+
+[bootstrap.macos.defaults.NSGlobalDomain]
+AppleShowAllExtensions = true
+AppleShowScrollBars = "Always"
+_HIHideMenuBar = true
+NSAutomaticDashSubstitutionEnabled = false
+NSAutomaticPeriodSubstitutionEnabled = false
+NSAutomaticQuoteSubstitutionEnabled = false
+WebAutomaticSpellingCorrectionEnabled = false
+"com.apple.swipescrolldirection" = false # natural scrolling off
+"com.apple.sound.uiaudio.enabled" = 0 # no UI sound effects
+"com.apple.sound.beep.sound" = "/System/Library/Sounds/Tink.aiff"
+"com.apple.mouse.scaling" = 2.0
+"com.apple.scrollwheel.scaling" = 0.5
+
+[bootstrap.macos.defaults."com.apple.dock"]
+tilesize = 56.0 # Dock stores this as a real, so not the integer `dock.tilesize`
+"expose-animation-duration" = 0.1
+"wvous-br-corner" = 1 # no bottom-right hot corner
+"wvous-br-modifier" = 0
+
+[bootstrap.macos.defaults."com.apple.screencapture"]
+"show-thumbnail" = true
+showsCursor = true
+
+[bootstrap.macos.defaults."com.apple.WindowManager"]
+EnableStandardClickToShowDesktop = false # clicking wallpaper only reveals desktop in Stage Manager
+EnableTiledWindowMargins = false
+HideDesktop = true
+StandardHideWidgets = true
+StageManagerHideWidgets = true
+
+[bootstrap.macos.defaults."com.apple.desktopservices"]
+DSDontWriteNetworkStores = true
+DSDontWriteUSBStores = true
+
+# Don't open Photos when a phone or camera is plugged in.
+[[bootstrap.macos.defaults_entries]]
+domain = "com.apple.ImageCapture"
+key = "disableHotPlug"
+host = "current"
+value = true
+
 [bootstrap.packages]
 "brew:cloc" = "latest"
 "brew:coreutils" = "latest"
