@@ -1,0 +1,3 @@
+theme = Bluloco Light
+shell-integration-features = no-cursor
+cursor-style-blink = false

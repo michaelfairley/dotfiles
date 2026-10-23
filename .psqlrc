@@ -1,0 +1,1 @@
+\set explain 'explain (analyze, format json, buffers, verbose)'

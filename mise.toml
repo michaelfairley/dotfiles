@@ -14,6 +14,12 @@ dotfiles_dir = "{{ config_root }}"
 "~/.emacs.d" = { source = ".emacs.d" }
 "~/.gitignore" = { source = ".gitignore" }
 "~/.inputrc" = { source = ".inputrc" }
+"~/.psqlrc" = { source = ".psqlrc" }
+"~/.bundle/config" = { source = "bundle/config" }
+"~/.config/ghostty/config" = { source = "ghostty/config" }
+"~/.config/zed/settings.json" = { source = "zed/settings.json" }
+"~/.config/zed/tasks.json" = { source = "zed/tasks.json" }
+"~/.claude/CLAUDE.md" = { source = "claude/CLAUDE.md" }
 
 # ~/.zshrc, ~/.bashrc, and ~/.gitconfig stay machine-local so installers (and
 # `git config --global`) can append to them. mise only owns a block in each that
@@ -21,6 +27,15 @@ dotfiles_dir = "{{ config_root }}"
 "~/.zshrc/dotfiles" = { source = "snippets/zshrc", template = "tera" }
 "~/.bashrc/dotfiles" = { source = "snippets/bashrc", template = "tera" }
 "~/.gitconfig/dotfiles" = { source = "snippets/gitconfig", template = "tera" }
+
+# These apps rewrite their own settings files, so mise owns only the keys in each
+# snippet. `merge = "missing"` entries are defaults the app may change later
+# (e.g. via /model); they're only filled in when unset.
+"~/.claude/settings.json/dotfiles" = { source = "snippets/claude-settings.json", merge = true }
+"~/.claude/settings.json/defaults" = { source = "snippets/claude-settings-defaults.json", merge = "missing" }
+"~/.codex/config.toml/dotfiles" = { source = "snippets/codex-config.toml", merge = true }
+"~/.codex/config.toml/defaults" = { source = "snippets/codex-config-defaults.toml", merge = "missing" }
+"~/.gemini/settings.json/dotfiles" = { source = "snippets/gemini-settings.json", merge = true }
 
 # Shims in ~/.zprofile, full activation in ~/.zshrc. bash activates from .bashrc,
 # guarded, since non-login bash doesn't have Homebrew on PATH.
