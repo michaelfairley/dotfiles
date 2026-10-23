@@ -10,3 +10,9 @@
 *.blend[0-9]
 .dir-locals-2.el
 .emacs.d/.lsp-session-v1
+
+/vendor/cache/rbs-*.gem
+/vendor/cache/ruby-lsp-*.gem
+/.antigravitycli
+
+**/.claude/.cc-writes/

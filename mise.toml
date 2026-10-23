@@ -1,0 +1,85 @@
+# Set up a new machine from this repo with:
+#
+#   mise bootstrap --from git@github.com:michaelfairley/dotfiles.git --from-dir ~/p/dotfiles
+#
+# After that, rerun `mise bootstrap` from this directory whenever this file changes.
+# Preview with `mise bootstrap --dry-run`.
+
+[vars]
+# The snippets/ templates don't see config_root directly, so pass it through.
+dotfiles_dir = "{{ config_root }}"
+
+[dotfiles]
+"~/.emacs" = { source = ".emacs" }
+"~/.emacs.d" = { source = ".emacs.d" }
+"~/.gitignore" = { source = ".gitignore" }
+"~/.inputrc" = { source = ".inputrc" }
+
+# ~/.zshrc, ~/.bashrc, and ~/.gitconfig stay machine-local so installers (and
+# `git config --global`) can append to them. mise only owns a block in each that
+# loads the tracked version from this repo.
+"~/.zshrc/dotfiles" = { source = "snippets/zshrc", template = "tera" }
+"~/.bashrc/dotfiles" = { source = "snippets/bashrc", template = "tera" }
+"~/.gitconfig/dotfiles" = { source = "snippets/gitconfig", template = "tera" }
+
+# Shims in ~/.zprofile, full activation in ~/.zshrc. bash activates from .bashrc,
+# guarded, since non-login bash doesn't have Homebrew on PATH.
+[bootstrap.mise_shell_activate]
+zsh = true
+
+[bootstrap.packages]
+"brew:cloc" = "latest"
+"brew:coreutils" = "latest"
+"brew:direnv" = "latest"
+"brew:ffmpeg" = "latest"
+"brew:git" = "latest"
+"brew:glow" = "latest"
+"brew:jq" = "latest"
+"brew:magic-wormhole" = "latest"
+"brew:mas" = "latest"
+"brew:watch" = "latest"
+"brew:wget" = "latest"
+"brew:yt-dlp" = "latest"
+
+"brew-cask:1password" = "latest"
+"brew-cask:1password-cli" = "latest"
+"brew-cask:discord" = "latest"
+"brew-cask:disk-inventory-x" = "latest"
+"brew-cask:dropbox" = "latest"
+"brew-cask:drovio" = "latest"
+"brew-cask:emacs" = "latest"
+"brew-cask:emacs-app" = "latest"
+"brew-cask:firefox" = "latest"
+"brew-cask:geekbench" = "latest"
+"brew-cask:ghostty" = "latest"
+"brew-cask:github" = "latest"
+"brew-cask:google-chrome" = "latest"
+"brew-cask:iterm2" = "latest"
+"brew-cask:macwhisper" = "latest"
+"brew-cask:obsidian" = "latest"
+"brew-cask:orbstack" = "latest"
+"brew-cask:setapp" = "latest"
+"brew-cask:sizzy" = "latest"
+"brew-cask:slack" = "latest"
+"brew-cask:spotify" = "latest"
+"brew-cask:steam" = "latest"
+"brew-cask:steamcmd" = "latest"
+"brew-cask:vlc" = "latest"
+"brew-cask:zed" = "latest"
+
+"mas:1472875808" = "latest" # CardPointers
+"mas:413857545" = "latest" # Divvy
+"mas:1358823008" = "latest" # Flighty
+"mas:6444602274" = "latest" # Ivory
+"mas:409183694" = "latest" # Keynote
+"mas:1527619437" = "latest" # Maccy
+"mas:409203825" = "latest" # Numbers
+"mas:409201541" = "latest" # Pages
+"mas:1303222628" = "latest" # Paprika Recipe Manager 3
+"mas:375589283" = "latest" # Parcel 2
+"mas:1475387142" = "latest" # Tailscale
+"mas:899247664" = "latest" # TestFlight
+"mas:1278508951" = "latest" # Trello
+"mas:6785630295" = "latest" # Unforgetful
+"mas:310633997" = "latest" # WhatsApp
+"mas:497799835" = "latest" # Xcode

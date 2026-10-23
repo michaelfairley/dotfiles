@@ -1,29 +1,16 @@
-alias g="git"
-alias be="bundle exec"
+# Sourced from ~/.bashrc, which mise bootstrap points here (see mise.toml).
 
-export EDITOR="emacs -nw"
+source "$DOTFILES/.shrc"
 
-export RUST_BACKTRACE=1
-
-if command -v brew > /dev/null && [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ] && [ -n "$BASH" ]; then
-    . `brew --prefix`/etc/bash_completion.d/git-completion.bash
+if command -v brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ]; then
+    . "$(brew --prefix)/etc/bash_completion.d/git-completion.bash"
     __git_complete g __git_main
-fi
-
-if command -v rbenv > /dev/null; then
-    eval "$(rbenv init -)"
 fi
 
 if command -v direnv > /dev/null; then
     eval "$(direnv hook bash)"
 fi
 
-export PATH="$HOME/.cargo/bin:$PATH"
-
-OS="$(uname -s)"
-if test "$OS" = "Darwin"; then
-    export PATH="$HOME/Library/Application Support/itch/bin:$PATH"
+if command -v mise > /dev/null; then
+    eval "$(mise activate bash)"
 fi
-
-export PATH="$HOME/.node_modules/bin:$PATH"
-export npm_config_prefix=~/.node_modules

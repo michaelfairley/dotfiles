@@ -1,0 +1,15 @@
+# Shared by bash and zsh; sourced from .bashrc and .zshrc.
+
+alias g="git"
+alias be="bundle exec"
+
+export EDITOR="emacs -nw"
+export npm_config_prefix=~/.node_modules
+
+# Only add directories that exist, so this is safe on machines missing some tools.
+path_prepend() { if [ -d "$1" ]; then PATH="$1:$PATH"; fi; }
+
+# Prepended in reverse order: the last one ends up first.
+path_prepend "$HOME/.node_modules/bin"
+path_prepend "$HOME/.local/bin"
+export PATH

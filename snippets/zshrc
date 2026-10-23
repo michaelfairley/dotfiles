@@ -1,0 +1,2 @@
+export DOTFILES="{{ vars.dotfiles_dir }}"
+source "$DOTFILES/.zshrc"
