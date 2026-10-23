@@ -84,6 +84,9 @@ and add `"~/path/to/file/dotfiles" = { source = "snippets/…", merge = true }`.
 `brew-cask:<cask>`, `mas:<numeric id>`; find IDs with `mas search`). It writes
 the entry into `mise.toml` and installs it. To find things installed with plain
 `brew`, run `mise bootstrap packages import --manager brew --dry-run`.
+`[bootstrap.brew] adopt = true` is set, so a cask whose app was already
+installed by hand takes that copy over instead of replacing it (keeping its
+macOS permissions and version); add `adopt = false` to a cask to replace it.
 
 **Add a macOS setting.** Change it in System Settings and compare
 `defaults read <domain>` before and after (or run `defaults export <domain> -`

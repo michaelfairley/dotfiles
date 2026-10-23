@@ -126,6 +126,12 @@ key = "disableHotPlug"
 host = "current"
 value = true
 
+# When a cask's app is already installed by hand, take it over instead of
+# replacing it, so it keeps its macOS privacy permissions and isn't downgraded.
+# A cask can opt out with `adopt = false`.
+[bootstrap.brew]
+adopt = true
+
 [bootstrap.packages]
 "brew:cloc" = "latest"
 "brew:coreutils" = "latest"
@@ -143,9 +149,9 @@ value = true
 "brew-cask:1password" = "latest"
 "brew-cask:1password-cli" = "latest"
 "brew-cask:affinity" = "latest" # replaces the discontinued Affinity Designer 2 / Photo 2
-"brew-cask:chatgpt" = { adopt = true }
-"brew-cask:claude" = { adopt = true }
-"brew-cask:cmux" = { adopt = true }
+"brew-cask:chatgpt" = "latest"
+"brew-cask:claude" = "latest"
+"brew-cask:cmux" = "latest"
 "brew-cask:discord" = "latest"
 "brew-cask:disk-inventory-x" = "latest"
 "brew-cask:dropbox" = "latest"
@@ -157,9 +163,9 @@ value = true
 "brew-cask:ghostty" = "latest"
 "brew-cask:github" = "latest"
 "brew-cask:google-chrome" = "latest"
-"brew-cask:google-gemini" = { adopt = true }
-"brew-cask:granola" = { adopt = true }
-"brew-cask:handy" = { adopt = true }
+"brew-cask:google-gemini" = "latest"
+"brew-cask:granola" = "latest"
+"brew-cask:handy" = "latest"
 "brew-cask:iterm2" = "latest"
 "brew-cask:macwhisper" = "latest"
 "brew-cask:obsidian" = "latest"
@@ -172,7 +178,7 @@ value = true
 "brew-cask:steamcmd" = "latest"
 "brew-cask:vlc" = "latest"
 "brew-cask:zed" = "latest"
-"brew-cask:zed-delta" = { adopt = true }
+"brew-cask:zed-delta" = "latest"
 "brew-cask:zoom" = "latest" # pkg installer; asks for an admin password
 
 "mas:1472875808" = "latest" # CardPointers

@@ -2,7 +2,7 @@
 # environment in ~/.config/mise/miserc.local.toml (see README).
 
 [bootstrap.packages]
-"brew-cask:flux-app" = { adopt = true } # installed by hand before mise managed it
+"brew-cask:flux-app" = "latest"
 # Logitech G HUB: G502 X mouse and C920 webcam. Its settings live in a SQLite
 # database, so they're carried over with `mise run ghub-save` / `ghub-restore`
 # (see README), not as a dotfile.
