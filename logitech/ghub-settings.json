@@ -1,0 +1,3147 @@
+{
+  "/devices/g502x/persistent_data": {
+    "deviceSplashShown": {
+      "value": true
+    },
+    "onboardMode": {}
+  },
+  "/uvc/CAMERA.c920.0.61D1B23F/deep/settings": {},
+  "analytics_supported_settings": {
+    "supportedSettings": [
+      {
+        "setting": "surround_sound",
+        "supported": true
+      },
+      {
+        "setting": "audio_bluevoice",
+        "supported": true
+      },
+      {
+        "setting": "audio_bluevoice2",
+        "supported": true
+      },
+      {
+        "setting": "sensitivity_preset_activate",
+        "supported": true
+      }
+    ]
+  },
+  "applications": {
+    "applications": [
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "categoryColors": [
+          {
+            "hex": "#ff43ee",
+            "tag": "Editing"
+          },
+          {
+            "hex": "#eeff43",
+            "tag": "Productivity"
+          },
+          {
+            "hex": "#43eeff",
+            "tag": "Mac"
+          },
+          {
+            "hex": "#ff4390",
+            "tag": "Navigation"
+          },
+          {
+            "hex": "#b243ff",
+            "tag": "Screenshot"
+          },
+          {
+            "hex": "#43eeff",
+            "tag": "Windows"
+          }
+        ],
+        "commands": [
+          {
+            "cardId": "81465b75-f97f-4ac2-964f-4ffbd01f3a65",
+            "category": "Editing",
+            "name": "Cut"
+          },
+          {
+            "cardId": "5ff20182-ee42-4eca-ab99-a6587fc11448",
+            "category": "Editing",
+            "name": "Copy"
+          },
+          {
+            "cardId": "95f7442a-7d2d-4bf0-b1b1-966e113c1c31",
+            "category": "Editing",
+            "name": "Paste"
+          },
+          {
+            "cardId": "713a003f-d6dc-4bcb-afc2-bc84c8431102",
+            "category": "Editing",
+            "name": "Undo"
+          },
+          {
+            "cardId": "47c152ef-a935-417d-8ac9-6bc4563b040f",
+            "category": "Editing",
+            "name": "Redo"
+          },
+          {
+            "cardId": "7d941d6a-111f-4fbb-a44d-980dad494f64",
+            "category": "Editing",
+            "name": "Select All"
+          },
+          {
+            "cardId": "17648646-55ab-44a6-b586-155c6d0befb8",
+            "category": "Editing",
+            "name": "Save"
+          },
+          {
+            "cardId": "01ee4b77-2bbb-4dcd-a989-c5e26ebe815e",
+            "category": "Editing",
+            "name": "New"
+          },
+          {
+            "cardId": "0e197694-6071-4014-8d0f-f73b667f3f05",
+            "category": "Editing",
+            "name": "Open"
+          },
+          {
+            "cardId": "a25e696b-c4bc-4378-83b3-88638bfd36f3",
+            "category": "Editing",
+            "name": "New tab"
+          },
+          {
+            "cardId": "d9a54589-0291-48d7-b520-7d370870da59",
+            "category": "Editing",
+            "name": "Close tab"
+          },
+          {
+            "cardId": "c3884534-00d4-4bb4-844c-34509a61ee8c",
+            "category": "Editing",
+            "name": "Zoom In"
+          },
+          {
+            "cardId": "00fd678e-fea3-41bd-a63e-7dbfc9a9b394",
+            "category": "Editing",
+            "name": "Zoom Out"
+          },
+          {
+            "cardId": "905458a2-c633-4b58-9bca-a9f790e7aef4",
+            "category": "Editing",
+            "name": "Zoom Reset"
+          },
+          {
+            "cardId": "49beb3f7-8a52-482b-aac0-c6410aebd636",
+            "category": "Productivity",
+            "name": "Switch Between Apps"
+          },
+          {
+            "cardId": "99ad8b2d-d06d-4a3a-951d-872c65862af9",
+            "category": "Productivity",
+            "name": "Exit Active App"
+          },
+          {
+            "cardId": "85a86287-2876-4df9-8e6c-6038f122f5bd",
+            "category": "Productivity",
+            "name": "Cycle Through Apps"
+          },
+          {
+            "cardId": "7238fc77-6876-4cf8-a196-a0f46d0be47f",
+            "category": "Productivity",
+            "name": "Open Task Manager"
+          },
+          {
+            "cardId": "d06f0a5f-cff8-4ece-9c94-aba204c47044",
+            "category": "Productivity",
+            "name": "Open Start"
+          },
+          {
+            "cardId": "7c51f415-e3df-43ed-83d2-0978e908d8e3",
+            "category": "Windows",
+            "name": "Lock PC"
+          },
+          {
+            "cardId": "15068bce-6f92-48fc-9a07-19807cccdfc4",
+            "category": "Windows",
+            "name": "Hide/Show Desktop"
+          },
+          {
+            "cardId": "88b74b86-3613-4dd5-9da0-d81899259917",
+            "category": "Windows",
+            "name": "Open Action Center"
+          },
+          {
+            "cardId": "ecd4e0a7-8188-4c69-bd4f-d460b61ffb4a",
+            "category": "Windows",
+            "name": "Set Focus in Notification Area"
+          },
+          {
+            "cardId": "123f83ce-99e3-4d76-832a-55b43a4f955b",
+            "category": "Windows",
+            "name": "Open File Explorer"
+          },
+          {
+            "cardId": "8141d6c9-bdb2-4aa3-ae06-ba670b14fa70",
+            "category": "Windows",
+            "name": "Open Windows Game Bar"
+          },
+          {
+            "cardId": "c9a7546b-89b4-48eb-85bd-8a0492f65baa",
+            "category": "Windows",
+            "name": "Open Windows Setting"
+          },
+          {
+            "cardId": "60ca91ac-75a0-4da4-8ac8-7f3b75404271",
+            "category": "Windows",
+            "name": "Open Connect Quick Action"
+          },
+          {
+            "cardId": "cd8a8e27-4eff-4fa2-a9e6-c0b712969e93",
+            "category": "Windows",
+            "name": "Minimize All Windows"
+          },
+          {
+            "cardId": "e0f6e91c-3950-416f-81c0-c55c5ac47603",
+            "category": "Windows",
+            "name": "Run dialog"
+          },
+          {
+            "cardId": "5c559c20-d7e2-4da1-a4ab-38c534b5a28b",
+            "category": "Windows",
+            "name": "Open Search"
+          },
+          {
+            "cardId": "556815c9-4d22-4cd4-b6ef-427340fbe9ae",
+            "category": "Windows",
+            "name": "Cycle Task Bar Apps"
+          },
+          {
+            "cardId": "7b60b23f-184b-4c26-a432-0698ee258e33",
+            "category": "Windows",
+            "name": "Open Ease of Access Center"
+          },
+          {
+            "cardId": "4ddffae8-e30c-451f-8227-3b40cb3c2410",
+            "category": "Windows",
+            "name": "Open Quick Links"
+          },
+          {
+            "cardId": "d23a46a2-9571-471d-a55d-7ee951d8fc59",
+            "category": "Windows",
+            "name": "Open Emoji Panel"
+          },
+          {
+            "cardId": "0484c555-64d8-42d2-b1e3-3bf20071439b",
+            "category": "Windows",
+            "name": "Open Task View"
+          },
+          {
+            "cardId": "90349727-f10c-453d-b995-67cdbc1925df",
+            "category": "Windows",
+            "name": "Open Narrator"
+          },
+          {
+            "cardId": "57fe3eec-1a9b-4869-a3ed-e6c1d87dd16b",
+            "category": "Windows",
+            "name": "Open Magnifier"
+          },
+          {
+            "cardId": "5dd6d86a-3cac-4638-ae75-741a660f0032",
+            "category": "Windows",
+            "name": "Open Copilot"
+          },
+          {
+            "cardId": "1e46692c-6ef0-4b3d-b0de-60b160fec03f",
+            "category": "Navigation",
+            "name": "Go Back"
+          },
+          {
+            "cardId": "c77aa4a3-ecba-4356-a153-c6e56f232a43",
+            "category": "Navigation",
+            "name": "Go Forward"
+          },
+          {
+            "cardId": "b3286cd1-181c-494e-b0a3-9b465990f965",
+            "category": "Windows",
+            "name": "Next Desktop"
+          },
+          {
+            "cardId": "e8d0c503-f54a-4c59-acf8-499f25e139c3",
+            "category": "Windows",
+            "name": "Previous Desktop"
+          },
+          {
+            "cardId": "77778c4c-b943-4fce-aa26-b67191bd08b2",
+            "category": "Editing",
+            "name": "Next Tab"
+          },
+          {
+            "cardId": "f7c0aff9-22a3-41ee-8ab7-f1778f75effc",
+            "category": "Editing",
+            "name": "Previous Tab"
+          }
+        ],
+        "databaseId": "420fd454-0c36-499d-bde4-146823b16147",
+        "lastRunTime": "2026-10-01T13:01:47-07:00",
+        "name": "APPLICATION_NAME_DESKTOP",
+        "version": 7
+      }
+    ]
+  },
+  "autostart": true,
+  "blue_voice_advanced_controls_enabled": false,
+  "brand": "Logitech",
+  "cards": {
+    "cards": [
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Screenshot",
+        "id": "17ac0ae6-2dce-42e8-a840-6b82b3ff8b76",
+        "macro": {
+          "actionName": "\u21e7\u23183",
+          "keystroke": {
+            "code": 32,
+            "modifiers": [
+              225,
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Screenshot Entire Screen",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "PRO_EQUALIZER",
+        "id": "5d42a856-1b6f-4c2a-9ab1-be086e53935f",
+        "name": "EQUALIZER_MOBA",
+        "proEqualizer": {
+          "bands": [
+            0,
+            -2,
+            3,
+            3,
+            3
+          ],
+          "deviceType": "HEADSET",
+          "name": "EQUALIZER_MOBA",
+          "type": "PRO"
+        },
+        "readOnly": true
+      },
+      {
+        "arcSettings": {
+          "controlPoints": [
+            {
+              "x": 3932
+            },
+            {
+              "x": 18350,
+              "y": 655
+            },
+            {
+              "x": 32112,
+              "y": 3277
+            },
+            {
+              "x": 44564,
+              "y": 10486
+            },
+            {
+              "x": 54394,
+              "y": 22282
+            },
+            {
+              "x": 60292,
+              "y": 36700
+            }
+          ],
+          "curve": "CATMULLROM",
+          "deadZone": {}
+        },
+        "attribute": "AXIS_RESPONSE_CURVE_SETTINGS",
+        "category": "custom",
+        "id": "c2e3b154-807a-4650-a4b5-2de9466fb725",
+        "name": "Low",
+        "readOnly": true
+      },
+      {
+        "attribute": "PRO_EQUALIZER",
+        "id": "aa1e0f3d-d5d1-42e3-ad24-0193e27f4416",
+        "name": "TSM Myth",
+        "proEqualizer": {
+          "bands": [
+            3,
+            1,
+            2,
+            3,
+            2
+          ],
+          "deviceType": "HEADSET",
+          "name": "TSM Myth",
+          "tag": "PRO_PRESET",
+          "type": "PRO"
+        },
+        "readOnly": true
+      },
+      {
+        "attribute": "FIRMWARE_LIGHTING_SETTINGS",
+        "firmwareLightingSettings": {
+          "effects": [
+            {
+              "cycleParams": {
+                "intensity": 1,
+                "periodInMs": 8000
+              },
+              "id": "CYCLE",
+              "zoneType": "ZONE_BRANDING"
+            },
+            {
+              "cycleParams": {
+                "intensity": 1,
+                "periodInMs": 8000
+              },
+              "id": "CYCLE",
+              "zoneType": "ZONE_PRIMARY"
+            }
+          ]
+        },
+        "id": "9b85425b-8c71-4b15-808c-1206c0830000",
+        "name": "DEFAULT_CARD_NAME_FIRMWARE_LIGHTING_SETTINGS",
+        "readOnly": true
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            -0.96,
+            -0.96,
+            1.92,
+            3.6,
+            4.32,
+            3.6,
+            3.6,
+            1.68,
+            0.96
+          ],
+          "deviceType": "SPEAKER",
+          "name": "EQUALIZER_COMMUNICATIONS",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "d27c3937-c03e-4fd5-9871-19c773513060",
+        "name": "EQUALIZER_COMMUNICATIONS",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "556815c9-4d22-4cd4-b6ef-427340fbe9ae",
+        "macro": {
+          "actionName": "\u2318T",
+          "keystroke": {
+            "code": 23,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Cycle Task Bar Apps",
+        "readOnly": true
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            0,
+            -0.96,
+            -1.44,
+            3.84,
+            4.56,
+            3.12,
+            3.12,
+            1.92,
+            0.48
+          ],
+          "deviceType": "HEADSET",
+          "name": "EQUALIZER_FPS",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "76b7a515-2c3c-4dab-bf65-48fff5318008",
+        "name": "EQUALIZER_FPS",
+        "readOnly": true
+      },
+      {
+        "attribute": "PRO_EQUALIZER",
+        "id": "9eb2e33c-cf6d-42b6-977a-f8939b65ddab",
+        "name": "TSM Hamlinz",
+        "proEqualizer": {
+          "bands": [
+            1,
+            1,
+            2,
+            3,
+            -1
+          ],
+          "deviceType": "HEADSET",
+          "name": "TSM Hamlinz",
+          "tag": "PRO_PRESET",
+          "type": "PRO"
+        },
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Navigation",
+        "id": "1e46692c-6ef0-4b3d-b0de-60b160fec03f",
+        "macro": {
+          "actionName": "\u2325LEFT",
+          "keystroke": {
+            "code": 80,
+            "modifiers": [
+              226
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Go Back",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Navigation",
+        "id": "bb519e77-c3d9-4a64-82da-badfeaf7be84",
+        "macro": {
+          "actionName": "\u2318]",
+          "keystroke": {
+            "code": 48,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Go to Next Folder",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "95f7442a-7d2d-4bf0-b1b1-966e113c1c31",
+        "macro": {
+          "actionName": "^V",
+          "keystroke": {
+            "code": 25,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Paste",
+        "readOnly": true
+      },
+      {
+        "attribute": "FOCUS_SETTINGS",
+        "deviceSignature": "CAMERA.c920",
+        "focusSettings": {
+          "focus": {
+            "mode": "AUTO",
+            "value": 1
+          }
+        },
+        "id": "d84611d8-9fab-4e7d-85d1-668e96e0a055",
+        "name": "DEFAULT_CARD_NAME_WEBCAM_FOCUS_SETTINGS",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Mac",
+        "id": "61117541-5aa1-4197-a183-994ce07c1fe3",
+        "macro": {
+          "actionName": "^\u2318F",
+          "keystroke": {
+            "code": 9,
+            "modifiers": [
+              224,
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Full Screen",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "ecd4e0a7-8188-4c69-bd4f-d460b61ffb4a",
+        "macro": {
+          "actionName": "\u2318B",
+          "keystroke": {
+            "code": 5,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Set Focus in Notification Area",
+        "readOnly": true
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            3.12,
+            2.64,
+            1.92,
+            1.2,
+            1.2,
+            1.92,
+            1.2,
+            0,
+            0,
+            0
+          ],
+          "deviceType": "HEADSET",
+          "name": "EQUALIZER_CINEMATIC",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "88615910-55f0-4e5a-88c8-855003ffa87a",
+        "name": "EQUALIZER_CINEMATIC",
+        "readOnly": true
+      },
+      {
+        "attribute": "MACRO_PLAYBACK",
+        "id": "762baba8-5c63-435e-97ef-b76fa48a44a2",
+        "macro": {
+          "action": {
+            "actionId": "obs_recording_toggle",
+            "integrationId": "ae67192054b1d99f"
+          },
+          "type": "ACTION"
+        },
+        "name": "APPLET_OBS_TOGGLE_RECORDING"
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "cb62a1a4-8050-4079-aef7-324eccc93e03",
+        "macro": {
+          "actionName": "\u2318M",
+          "keystroke": {
+            "code": 16,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Minimize Front Window",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "PRO_EQUALIZER",
+        "id": "f2372777-f4eb-4370-97a1-74e7b606fd48",
+        "name": "EQUALIZER_FPS",
+        "proEqualizer": {
+          "bands": [
+            2,
+            2,
+            0,
+            4,
+            1
+          ],
+          "deviceType": "HEADSET",
+          "name": "EQUALIZER_FPS",
+          "type": "PRO"
+        },
+        "readOnly": true
+      },
+      {
+        "attribute": "EXPOSURE_SETTINGS",
+        "deviceSignature": "CAMERA.c920",
+        "exposureSettings": {
+          "exposure": {
+            "mode": "AUTO",
+            "value": 60
+          },
+          "gain": {
+            "mode": "MANUAL",
+            "value": 100
+          },
+          "priority": "PRIORITY_EXPOSURE"
+        },
+        "id": "7473abfd-4769-4dfc-9fc0-4a72aad20e86",
+        "name": "DEFAULT_CARD_NAME_WEBCAM_EXPOSURE_SETTINGS",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "713a003f-d6dc-4bcb-afc2-bc84c8431102",
+        "macro": {
+          "actionName": "^Z",
+          "keystroke": {
+            "code": 29,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Undo",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "47c152ef-a935-417d-8ac9-6bc4563b040f",
+        "macro": {
+          "actionName": "^Y",
+          "keystroke": {
+            "code": 28,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Redo",
+        "readOnly": true
+      },
+      {
+        "attribute": "MOUSE_SETTINGS",
+        "id": "79431a67-7ce0-4be3-a710-f7a71ef23493",
+        "mouseSettings": {
+          "dpiTable": {
+            "activeDpi": 800,
+            "defaultDpi": 800,
+            "levels": [
+              400,
+              800,
+              1600,
+              3200
+            ],
+            "shiftDpi": 400
+          },
+          "reportRate": {
+            "value": 1000
+          }
+        },
+        "name": "DEFAULT_CARD_NAME_MOUSE_SETTINGS",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147"
+      },
+      {
+        "attribute": "MOUSE_SETTINGS",
+        "id": "9b85425b-8c71-4b15-808c-1204c0830000",
+        "mouseSettings": {
+          "dpiTable": {
+            "activeDpi": 800,
+            "defaultDpi": 800,
+            "levels": [
+              400,
+              800,
+              1600,
+              3200
+            ],
+            "shiftDpi": 400
+          },
+          "reportRate": {
+            "value": 1000
+          }
+        },
+        "name": "DEFAULT_CARD_NAME_MOUSE_SETTINGS",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "17648646-55ab-44a6-b586-155c6d0befb8",
+        "macro": {
+          "actionName": "^S",
+          "keystroke": {
+            "code": 22,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Save",
+        "readOnly": true
+      },
+      {
+        "attribute": "MACRO_PLAYBACK",
+        "id": "d3619fc5-cec1-4c9a-b31a-039332393ce4",
+        "macro": {
+          "action": {
+            "actionId": "discord_voice_deafen",
+            "integrationId": "9f1134cfb89202f3"
+          },
+          "type": "ACTION"
+        },
+        "name": "APPLET_DISCORD_VOICE_DEAFEN"
+      },
+      {
+        "attribute": "CAMERA_SETTINGS",
+        "cameraSettings": {
+          "audioMode": "MONO",
+          "exposure": {
+            "mode": "AUTO",
+            "value": -5
+          },
+          "focus": {
+            "mode": "AUTO"
+          },
+          "fov": 90,
+          "hdr": true,
+          "iris": {
+            "mode": "MANUAL"
+          },
+          "pan": {
+            "mode": "MANUAL"
+          },
+          "priority": "EXPOSURE",
+          "roll": {
+            "mode": "MANUAL"
+          },
+          "tilt": {
+            "mode": "MANUAL"
+          },
+          "zoom": {
+            "mode": "MANUAL",
+            "value": 100
+          }
+        },
+        "id": "74f97c2b-9839-4dea-0000-a55d5448ae62",
+        "name": "VIDEO_CALL",
+        "readOnly": true
+      },
+      {
+        "attribute": "MACRO_PLAYBACK",
+        "id": "6015adda-63bc-4bc5-9a22-f9722bcd38d4",
+        "macro": {
+          "action": {
+            "actionId": "slobs_stream_toggle",
+            "integrationId": "7264dd41c5d6c6f6"
+          },
+          "type": "ACTION"
+        },
+        "name": "APPLET_SLOBS_TOGGLE_STREAM"
+      },
+      {
+        "attribute": "MACRO_PLAYBACK",
+        "id": "7d160583-7d8a-4303-a4bf-b328bad0b318",
+        "macro": {
+          "action": {
+            "actionId": "obs_desktop_mute_toggle",
+            "integrationId": "ae67192054b1d99f"
+          },
+          "type": "ACTION"
+        },
+        "name": "APPLET_OBS_DESKTOP_MUTE_TOGGLE"
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "9adf2705-4fd3-4240-83fd-b834cf408530",
+        "macro": {
+          "actionName": "\u2318H",
+          "keystroke": {
+            "code": 11,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Hide the Windows",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "CENTURION_EQUALIZER",
+        "centurionEqualizer": {
+          "deviceType": "HEADSET",
+          "gains": [
+            2,
+            2,
+            0,
+            4,
+            1
+          ],
+          "name": "EQUALIZER_FPS",
+          "type": "CENTURION"
+        },
+        "id": "61fba25f-d535-4183-86d9-8ed4ab0278dd",
+        "name": "EQUALIZER_FPS",
+        "readOnly": true
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            -3,
+            -4,
+            -5,
+            -6,
+            -6,
+            -5,
+            -6,
+            0,
+            0,
+            0
+          ],
+          "deviceType": "SPEAKER",
+          "name": "EQUALIZER_CINEMATIC",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "6856912f-c4be-4add-9f9c-56249d566be6",
+        "name": "EQUALIZER_CINEMATIC",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Navigation",
+        "id": "4b918855-96cc-4278-9d32-02318148a80b",
+        "macro": {
+          "actionName": "\u2318[",
+          "keystroke": {
+            "code": 47,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Go to Previous Folder",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "VIDEO_SETTINGS",
+        "id": "1068c6e4-4ebd-4906-0000-0e1b022eee71",
+        "name": "CARTOON",
+        "readOnly": true,
+        "videoSettings": {
+          "antiFlicker": 60,
+          "brightness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "color": {
+            "mode": "MANUAL"
+          },
+          "contrast": {
+            "mode": "MANUAL",
+            "value": 160
+          },
+          "gain": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "gamma": {
+            "mode": "MANUAL"
+          },
+          "hue": {
+            "mode": "MANUAL",
+            "value": 50
+          },
+          "saturation": {
+            "mode": "MANUAL",
+            "value": 255
+          },
+          "sharpness": {
+            "mode": "MANUAL"
+          },
+          "whiteBalance": {
+            "mode": "AUTO",
+            "value": 4290
+          }
+        }
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            3.6,
+            2.64,
+            1.68,
+            0.96,
+            0.96,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deviceType": "HEADSET",
+          "name": "EQUALIZER_BASS_BOOST",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "4b5147ba-0818-4c77-9dd4-152072c20042",
+        "name": "EQUALIZER_BASS_BOOST",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "e0f6e91c-3950-416f-81c0-c55c5ac47603",
+        "macro": {
+          "actionName": "\u2318R",
+          "keystroke": {
+            "code": 21,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Run dialog",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "7d941d6a-111f-4fbb-a44d-980dad494f64",
+        "macro": {
+          "actionName": "^A",
+          "keystroke": {
+            "code": 4,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Select All",
+        "readOnly": true
+      },
+      {
+        "attribute": "VIDEO_SETTINGS",
+        "id": "6fc5b9d8-957b-430f-0000-2b020a2fd6fa",
+        "name": "BLACK_AND_WHITE",
+        "readOnly": true,
+        "videoSettings": {
+          "antiFlicker": 60,
+          "brightness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "color": {
+            "mode": "MANUAL"
+          },
+          "contrast": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "gain": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "gamma": {
+            "mode": "MANUAL"
+          },
+          "hue": {
+            "mode": "MANUAL",
+            "value": 50
+          },
+          "saturation": {
+            "mode": "MANUAL"
+          },
+          "sharpness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "whiteBalance": {
+            "mode": "AUTO",
+            "value": 4280
+          }
+        }
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deviceType": "HEADSET",
+          "name": "DEFAULT",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "SIMPLE"
+        },
+        "id": "05525ad1-71a4-45c4-aafa-d56ad1429f32",
+        "name": "EQUALIZER_SIMPLE_DEFAULT_HIDDEN",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "00fd678e-fea3-41bd-a63e-7dbfc9a9b394",
+        "macro": {
+          "actionName": "^-",
+          "keystroke": {
+            "code": 45,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Zoom Out",
+        "readOnly": true
+      },
+      {
+        "attribute": "PRO_EQUALIZER",
+        "id": "0487742c-a435-4379-95d6-f0b52fe4e0f8",
+        "name": "PRO_EQUALIZER_DEFAULT",
+        "proEqualizer": {
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "PRO_EQUALIZER_DEFAULT",
+          "type": "PRO"
+        },
+        "readOnly": true
+      },
+      {
+        "attribute": "CAMERA_SETTINGS",
+        "cameraSettings": {
+          "audioMode": "STEREO",
+          "exposure": {
+            "mode": "AUTO",
+            "value": -5
+          },
+          "focus": {
+            "mode": "AUTO"
+          },
+          "fov": 78,
+          "hdr": true,
+          "iris": {
+            "mode": "MANUAL"
+          },
+          "pan": {
+            "mode": "MANUAL"
+          },
+          "priority": "FRAME_RATE",
+          "roll": {
+            "mode": "MANUAL"
+          },
+          "tilt": {
+            "mode": "MANUAL"
+          },
+          "zoom": {
+            "mode": "MANUAL",
+            "value": 100
+          }
+        },
+        "id": "570d3eeb-abcf-451d-0000-9d65f64ce5a0",
+        "name": "STREAMING",
+        "readOnly": true
+      },
+      {
+        "attribute": "CROP_SETTINGS",
+        "cropSettings": {
+          "pan": {
+            "mode": "MANUAL"
+          },
+          "tilt": {
+            "mode": "MANUAL"
+          },
+          "zoom": {
+            "mode": "MANUAL",
+            "value": 100
+          }
+        },
+        "deviceSignature": "CAMERA.c920",
+        "id": "83497f87-ebc0-4a17-b7f7-5aec5e882a88",
+        "name": "DEFAULT_CARD_NAME_WEBCAM_CROP_SETTINGS",
+        "readOnly": true
+      },
+      {
+        "attribute": "MACRO_PLAYBACK",
+        "id": "35c62370-3b5a-4d3f-86bb-9c530338eea2",
+        "macro": {
+          "action": {
+            "actionId": "obs_mic_mute_toggle",
+            "integrationId": "ae67192054b1d99f"
+          },
+          "type": "ACTION"
+        },
+        "name": "APPLET_OBS_MIC_MUTE_TOGGLE"
+      },
+      {
+        "attribute": "CENTURION_EQUALIZER",
+        "centurionEqualizer": {
+          "deviceType": "HEADSET",
+          "gains": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "EQUALIZER_FLAT",
+          "type": "CENTURION"
+        },
+        "id": "123e0346-e78a-43e0-b81c-55d24f267f5c",
+        "name": "EQUALIZER_FLAT",
+        "readOnly": true
+      },
+      {
+        "attribute": "PRO_EQUALIZER",
+        "id": "b4bdd01f-a3a8-4163-817e-43808ffbf4bf",
+        "name": "G2 shox",
+        "proEqualizer": {
+          "bands": [
+            1,
+            -1,
+            -2,
+            1,
+            2
+          ],
+          "deviceType": "HEADSET",
+          "name": "G2 shox",
+          "tag": "PRO_PRESET",
+          "type": "PRO"
+        },
+        "readOnly": true
+      },
+      {
+        "attribute": "PRO_EQUALIZER",
+        "id": "1f380829-db70-438e-adb6-54c46b95c4aa",
+        "name": "London Spitfire Profit",
+        "proEqualizer": {
+          "bands": [
+            -2,
+            -1,
+            1,
+            2,
+            3
+          ],
+          "deviceType": "HEADSET",
+          "name": "London Spitfire Profit",
+          "tag": "PRO_PRESET",
+          "type": "PRO"
+        },
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "f7c0aff9-22a3-41ee-8ab7-f1778f75effc",
+        "macro": {
+          "actionName": "^\u21e7TAB",
+          "keystroke": {
+            "code": 43,
+            "modifiers": [
+              224,
+              225
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Previous Tab",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "905458a2-c633-4b58-9bca-a9f790e7aef4",
+        "macro": {
+          "actionName": "^0",
+          "keystroke": {
+            "code": 39,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Zoom Reset",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Mac",
+        "id": "670513f5-cb9f-416e-9b16-008579bc978f",
+        "macro": {
+          "actionName": "\u21e7\u2318BACKSPACE",
+          "keystroke": {
+            "code": 42,
+            "modifiers": [
+              225,
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Empty the Trash",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "359cbc47-b978-4be4-9451-0addf3b9fe55",
+        "macro": {
+          "actionName": "\u2318P",
+          "keystroke": {
+            "code": 19,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Print",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "VIDEO_SETTINGS",
+        "id": "8ac986e2-36b4-427d-0000-ee0fbf4abf5e",
+        "name": "SICKNESS",
+        "readOnly": true,
+        "videoSettings": {
+          "antiFlicker": 60,
+          "brightness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "color": {
+            "mode": "MANUAL"
+          },
+          "contrast": {
+            "mode": "MANUAL",
+            "value": 200
+          },
+          "gain": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "gamma": {
+            "mode": "MANUAL"
+          },
+          "hue": {
+            "mode": "MANUAL",
+            "value": 50
+          },
+          "saturation": {
+            "mode": "MANUAL",
+            "value": 65
+          },
+          "sharpness": {
+            "mode": "MANUAL",
+            "value": 200
+          },
+          "whiteBalance": {
+            "mode": "AUTO",
+            "value": 4290
+          }
+        }
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "81465b75-f97f-4ac2-964f-4ffbd01f3a65",
+        "macro": {
+          "actionName": "^X",
+          "keystroke": {
+            "code": 27,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Cut",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "5ff20182-ee42-4eca-ab99-a6587fc11448",
+        "macro": {
+          "actionName": "^C",
+          "keystroke": {
+            "code": 6,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Copy",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "4ddffae8-e30c-451f-8227-3b40cb3c2410",
+        "macro": {
+          "actionName": "\u2318X",
+          "keystroke": {
+            "code": 27,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Quick Links",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "88b74b86-3613-4dd5-9da0-d81899259917",
+        "macro": {
+          "actionName": "\u2318A",
+          "keystroke": {
+            "code": 4,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Action Center",
+        "readOnly": true
+      },
+      {
+        "attribute": "WEBCAM_MICROPHONE_SETTINGS",
+        "deviceSignature": "CAMERA.c920",
+        "id": "508b21c5-9c73-4350-98b4-858c0016119e",
+        "name": "DEFAULT_CARD_NAME_WEBCAM_MICROPHONE_SETTINGS",
+        "readOnly": true,
+        "webcamMicrophoneSettings": {
+          "volume": {
+            "gain": 0.88
+          }
+        }
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "01ee4b77-2bbb-4dcd-a989-c5e26ebe815e",
+        "macro": {
+          "actionName": "^N",
+          "keystroke": {
+            "code": 17,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "New",
+        "readOnly": true
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deviceType": "SPEAKER",
+          "name": "EQUALIZER_FLAT",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "34d14cea-9476-4fa9-aca7-bcdb008952fd",
+        "name": "EQUALIZER_FLAT",
+        "readOnly": true
+      },
+      {
+        "attribute": "IMAGE_SETTINGS",
+        "deviceSignature": "CAMERA.c920",
+        "id": "1cf4c537-ce9f-4e2d-9acf-5e7ccb17bf01",
+        "imageSettings": {
+          "brightness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "contrast": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "manualCard": true,
+          "saturation": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "sharpness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "whiteBalance": {
+            "mode": "AUTO",
+            "value": 4000
+          }
+        },
+        "name": "WEBCAM_IMAGE_MANUAL_ADJUSTMENT",
+        "readOnly": true
+      },
+      {
+        "arcSettings": {
+          "controlPoints": [
+            {
+              "x": 3932,
+              "y": 28835
+            },
+            {
+              "x": 7864,
+              "y": 38010
+            },
+            {
+              "x": 15728,
+              "y": 48496
+            },
+            {
+              "x": 30801,
+              "y": 59637
+            },
+            {
+              "x": 45219,
+              "y": 64224
+            },
+            {
+              "x": 57671,
+              "y": 65535
+            }
+          ],
+          "curve": "CATMULLROM",
+          "deadZone": {}
+        },
+        "attribute": "AXIS_RESPONSE_CURVE_SETTINGS",
+        "category": "custom",
+        "id": "5ca642e9-fb20-424c-b7a5-6a06161745db",
+        "name": "High",
+        "readOnly": true
+      },
+      {
+        "attribute": "CAMERA_SETTINGS",
+        "cameraSettings": {
+          "audioMode": "STEREO",
+          "exposure": {
+            "mode": "AUTO",
+            "value": -5
+          },
+          "focus": {
+            "mode": "AUTO",
+            "value": 128
+          },
+          "fov": 90,
+          "hdr": true,
+          "iris": {
+            "mode": "MANUAL"
+          },
+          "pan": {
+            "mode": "MANUAL"
+          },
+          "priority": "EXPOSURE",
+          "roll": {
+            "mode": "MANUAL"
+          },
+          "tilt": {
+            "mode": "MANUAL"
+          },
+          "zoom": {
+            "mode": "MANUAL",
+            "value": 100
+          }
+        },
+        "id": "9b85425b-8c71-4b15-808c-120908e50000",
+        "name": "WEBCAM_CAMERA_DEFAULT_c920",
+        "readOnly": true
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -3,
+            -4,
+            -5,
+            -6,
+            -6
+          ],
+          "deviceType": "SPEAKER",
+          "name": "EQUALIZER_BASS_BOOST",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "fd92f827-4096-4e6c-96b5-b3e7620d1502",
+        "name": "EQUALIZER_BASS_BOOST",
+        "readOnly": true
+      },
+      {
+        "attribute": "EXPOSURE_SETTINGS",
+        "deviceSignature": "CAMERA.c920",
+        "exposureSettings": {
+          "exposure": {
+            "mode": "AUTO",
+            "value": 60
+          },
+          "gain": {
+            "mode": "MANUAL",
+            "value": 100
+          },
+          "priority": "PRIORITY_FRAME_RATE"
+        },
+        "id": "844eb7fc-2928-439d-a92d-82ee89679717",
+        "name": "WEBCAM_PRESET_STREAMING",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Mac",
+        "id": "61015fc6-02f3-45d7-bbb5-1ce3203c80ea",
+        "macro": {
+          "actionName": "\u2318SPACEBAR",
+          "keystroke": {
+            "code": 44,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Show or Hide Spotlight",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "MACRO_PLAYBACK",
+        "id": "5ecd947d-e008-4132-87a7-2b68de5cfb96",
+        "macro": {
+          "action": {
+            "actionId": "slobs_recording_toggle",
+            "integrationId": "7264dd41c5d6c6f6"
+          },
+          "type": "ACTION"
+        },
+        "name": "APPLET_SLOBS_TOGGLE_RECORDING"
+      },
+      {
+        "attribute": "MACRO_PLAYBACK",
+        "id": "2779cd05-61dd-43cd-a8e4-92e6361e2509",
+        "macro": {
+          "action": {
+            "actionId": "obs_buffer_save",
+            "integrationId": "ae67192054b1d99f"
+          },
+          "type": "ACTION"
+        },
+        "name": "APPLET_OBS_SAVE_BUFFER"
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Mac",
+        "id": "38a65483-8abe-4356-813e-bd4316e6cd5f",
+        "macro": {
+          "actionName": "\u2318TAB",
+          "keystroke": {
+            "code": 43,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Switch to Next App",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "VIDEO_SETTINGS",
+        "id": "9b85425b-8c71-4b15-808c-120a08e50000",
+        "name": "FILTER_NONE_c920",
+        "readOnly": true,
+        "videoSettings": {
+          "antiFlicker": 60,
+          "brightness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "color": {
+            "mode": "MANUAL"
+          },
+          "contrast": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "gain": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "gamma": {
+            "mode": "MANUAL"
+          },
+          "hue": {
+            "mode": "MANUAL",
+            "value": 50
+          },
+          "saturation": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "sharpness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "whiteBalance": {
+            "mode": "AUTO",
+            "value": 4460
+          }
+        }
+      },
+      {
+        "attribute": "CENTURION_EQUALIZER",
+        "centurionEqualizer": {
+          "deviceType": "HEADSET",
+          "gains": [
+            0,
+            -2,
+            3,
+            3,
+            3
+          ],
+          "name": "EQUALIZER_MOBA",
+          "type": "CENTURION"
+        },
+        "id": "b2c8ab8c-8366-4905-9f1c-b4ed12d31326",
+        "name": "EQUALIZER_MOBA",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "c3884534-00d4-4bb4-844c-34509a61ee8c",
+        "macro": {
+          "actionName": "^=",
+          "keystroke": {
+            "code": 46,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Zoom In",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Mac",
+        "id": "a18681dd-4c58-454b-a276-349db7b55fa0",
+        "macro": {
+          "actionName": "\u2318,",
+          "keystroke": {
+            "code": 54,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Preferences for Front App",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            -10,
+            -11,
+            0,
+            -2,
+            -5,
+            -3,
+            -17,
+            -3,
+            0
+          ],
+          "deviceType": "SPEAKER",
+          "name": "EQUALIZER_MOBA",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "e6b6fdd4-7988-4c2c-8122-3853c3a1b2f4",
+        "name": "EQUALIZER_MOBA",
+        "readOnly": true
+      },
+      {
+        "attribute": "IMAGE_SETTINGS",
+        "deviceSignature": "CAMERA.c920",
+        "id": "acb39655-cdaf-4835-bbcb-2a3cac87b51a",
+        "imageSettings": {
+          "brightness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "contrast": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "saturation": {
+            "mode": "MANUAL"
+          },
+          "sharpness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "whiteBalance": {
+            "mode": "AUTO",
+            "value": 4000
+          }
+        },
+        "name": "WEBCAM_PRESET_BLACK_AND_WHITE",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "49beb3f7-8a52-482b-aac0-c6410aebd636",
+        "macro": {
+          "actionName": "\u2325TAB",
+          "keystroke": {
+            "code": 43,
+            "modifiers": [
+              226
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Switch Between Apps",
+        "readOnly": true
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deviceType": "HEADSET",
+          "name": "EQUALIZER_FLAT",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "0c94ec70-b811-4301-853f-e044c119cf97",
+        "name": "EQUALIZER_FLAT",
+        "readOnly": true
+      },
+      {
+        "attribute": "CROP_SETTINGS",
+        "cropSettings": {
+          "manualCard": true,
+          "pan": {
+            "mode": "MANUAL"
+          },
+          "tilt": {
+            "mode": "MANUAL"
+          },
+          "zoom": {
+            "mode": "MANUAL",
+            "value": 100
+          }
+        },
+        "deviceSignature": "CAMERA.c920",
+        "id": "71c4cce9-e0d8-4e4d-ab6e-de81ab9305bc",
+        "name": "WEBCAM_CROP_MANUAL_ADJUSTMENT",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "5c559c20-d7e2-4da1-a4ab-38c534b5a28b",
+        "macro": {
+          "actionName": "\u2318S",
+          "keystroke": {
+            "code": 22,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Search",
+        "readOnly": true
+      },
+      {
+        "attribute": "MACRO_PLAYBACK",
+        "id": "6d0295f5-2409-46cd-94d2-db66616f14ec",
+        "macro": {
+          "action": {
+            "actionId": "obs_stream_toggle",
+            "integrationId": "ae67192054b1d99f"
+          },
+          "type": "ACTION"
+        },
+        "name": "APPLET_OBS_TOGGLE_STREAM"
+      },
+      {
+        "attribute": "IMAGE_SETTINGS",
+        "deviceSignature": "CAMERA.c920",
+        "id": "ec509792-b9df-419a-b837-d0ba28097179",
+        "imageSettings": {
+          "brightness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "contrast": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "saturation": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "sharpness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "whiteBalance": {
+            "mode": "AUTO",
+            "value": 4000
+          }
+        },
+        "name": "DEFAULT_CARD_NAME_WEBCAM_IMAGE_SETTINGS",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "7238fc77-6876-4cf8-a196-a0f46d0be47f",
+        "macro": {
+          "actionName": "^\u21e7ESCAPE",
+          "keystroke": {
+            "code": 41,
+            "modifiers": [
+              224,
+              225
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Task Manager",
+        "readOnly": true
+      },
+      {
+        "arcSettings": {
+          "controlPoints": [
+            {
+              "x": 4096,
+              "y": 4096
+            },
+            {
+              "x": 8192,
+              "y": 8192
+            },
+            {
+              "x": 16384,
+              "y": 16384
+            },
+            {
+              "x": 32768,
+              "y": 32768
+            },
+            {
+              "x": 49152,
+              "y": 49152
+            },
+            {
+              "x": 57342,
+              "y": 57342
+            }
+          ],
+          "curve": "CATMULLROM",
+          "deadZone": {}
+        },
+        "attribute": "AXIS_RESPONSE_CURVE_SETTINGS",
+        "category": "custom",
+        "id": "2d7eed38-3501-4340-b1be-965e2db49a5b",
+        "name": "Linear",
+        "readOnly": true
+      },
+      {
+        "attribute": "MOUSE_SETTINGS",
+        "id": "38b86aed-cceb-4815-a186-b767a0262be8",
+        "mouseSettings": {
+          "dpiTable": {
+            "activeDpi": 1700,
+            "defaultDpi": 1700,
+            "levels": [
+              1700
+            ],
+            "shiftDpi": 1700
+          },
+          "reportRate": {
+            "value": 1000
+          }
+        },
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147"
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "a25e696b-c4bc-4378-83b3-88638bfd36f3",
+        "macro": {
+          "actionName": "^T",
+          "keystroke": {
+            "code": 23,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "New tab",
+        "readOnly": true
+      },
+      {
+        "attribute": "FOCUS_SETTINGS",
+        "deviceSignature": "CAMERA.c920",
+        "focusSettings": {
+          "focus": {
+            "mode": "AUTO",
+            "value": 1
+          },
+          "manualCard": true
+        },
+        "id": "f65c3d3e-c2d2-4f1c-ae4c-9b405c5728f3",
+        "name": "WEBCAM_FOCUS_MANUAL_ADJUSTMENT",
+        "readOnly": true
+      },
+      {
+        "attribute": "CROP_SETTINGS",
+        "cropSettings": {
+          "pan": {
+            "mode": "MANUAL"
+          },
+          "tilt": {
+            "mode": "MANUAL"
+          },
+          "zoom": {
+            "mode": "MANUAL",
+            "value": 150
+          }
+        },
+        "deviceSignature": "CAMERA.c920",
+        "id": "02e38c93-8c8a-4879-b13f-e9d3c14e76ec",
+        "name": "WEBCAM_PRESET_ZOOM_1.5_X",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "90349727-f10c-453d-b995-67cdbc1925df",
+        "macro": {
+          "actionName": "\u2318^ENTER",
+          "keystroke": {
+            "code": 40,
+            "modifiers": [
+              227,
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Narrator",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "77778c4c-b943-4fce-aa26-b67191bd08b2",
+        "macro": {
+          "actionName": "^TAB",
+          "keystroke": {
+            "code": 43,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Next Tab",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Mac",
+        "id": "2db14c42-c54e-4baf-8898-cb84e46e395a",
+        "macro": {
+          "actionName": "\u21e7\u2318Q",
+          "keystroke": {
+            "code": 20,
+            "modifiers": [
+              225,
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Log Out",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "CROP_SETTINGS",
+        "cropSettings": {
+          "pan": {
+            "mode": "MANUAL"
+          },
+          "tilt": {
+            "mode": "MANUAL"
+          },
+          "zoom": {
+            "mode": "MANUAL",
+            "value": 200
+          }
+        },
+        "deviceSignature": "CAMERA.c920",
+        "id": "5cbffb09-013a-4043-8f6b-0df93098ab8c",
+        "name": "WEBCAM_PRESET_ZOOM_2_X",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "c9a7546b-89b4-48eb-85bd-8a0492f65baa",
+        "macro": {
+          "actionName": "\u2318I",
+          "keystroke": {
+            "code": 12,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Windows Setting",
+        "readOnly": true
+      },
+      {
+        "attribute": "MOUSE_SETTINGS",
+        "id": "afb4863d-f004-42f8-9db5-7355406aabf7",
+        "mouseSettings": {
+          "dpiTable": {
+            "activeDpi": 1600,
+            "defaultDpi": 1600,
+            "levels": [
+              800,
+              1200,
+              1600,
+              2400,
+              3200
+            ],
+            "shiftDpi": 800
+          },
+          "reportRate": {
+            "value": 1000
+          }
+        },
+        "readOnly": true
+      },
+      {
+        "attribute": "VIDEO_SETTINGS",
+        "id": "5ddce669-57c3-40f6-0000-f2aabe64dbd5",
+        "name": "ZOMBIE",
+        "readOnly": true,
+        "videoSettings": {
+          "antiFlicker": 60,
+          "brightness": {
+            "mode": "MANUAL",
+            "value": 95
+          },
+          "color": {
+            "mode": "MANUAL"
+          },
+          "contrast": {
+            "mode": "MANUAL",
+            "value": 80
+          },
+          "gain": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "gamma": {
+            "mode": "MANUAL"
+          },
+          "hue": {
+            "mode": "MANUAL",
+            "value": 50
+          },
+          "saturation": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "sharpness": {
+            "mode": "MANUAL",
+            "value": 128
+          },
+          "whiteBalance": {
+            "mode": "AUTO",
+            "value": 4280
+          }
+        }
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            0,
+            -6,
+            -5,
+            -3,
+            -2,
+            -3,
+            -3,
+            -5,
+            -6
+          ],
+          "deviceType": "SPEAKER",
+          "name": "EQUALIZER_FPS",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "58d82764-0486-4068-a818-68d1cc87e91d",
+        "name": "EQUALIZER_FPS",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "85a86287-2876-4df9-8e6c-6038f122f5bd",
+        "macro": {
+          "actionName": "\u2325ESCAPE",
+          "keystroke": {
+            "code": 41,
+            "modifiers": [
+              226
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Cycle Through Apps",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Mac",
+        "id": "bb1176c9-a24b-4c1f-91d7-87706a12cfe0",
+        "macro": {
+          "actionName": "\u2318BACKSPACE",
+          "keystroke": {
+            "code": 42,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Move to Trash",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            -1.92,
+            -2.4,
+            0,
+            4.32,
+            1.92,
+            3.6,
+            7.68,
+            3.6,
+            0
+          ],
+          "deviceType": "HEADSET",
+          "name": "EQUALIZER_MOBA",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "617470b0-7712-4f74-8da0-d4ca9283c8fb",
+        "name": "EQUALIZER_MOBA",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "cd8a8e27-4eff-4fa2-a9e6-c0b712969e93",
+        "macro": {
+          "actionName": "\u2318M",
+          "keystroke": {
+            "code": 16,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Minimize All Windows",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "d23a46a2-9571-471d-a55d-7ee951d8fc59",
+        "macro": {
+          "actionName": "\u2318.",
+          "keystroke": {
+            "code": 55,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Emoji Panel",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Screenshot",
+        "id": "4eb69a08-75e3-4843-92c8-b02949c46649",
+        "macro": {
+          "actionName": "\u21e7\u23184",
+          "keystroke": {
+            "code": 33,
+            "modifiers": [
+              225,
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Screenshot of Selected Area",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "7b60b23f-184b-4c26-a432-0698ee258e33",
+        "macro": {
+          "actionName": "\u2318U",
+          "keystroke": {
+            "code": 24,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Ease of Access Center",
+        "readOnly": true
+      },
+      {
+        "attribute": "MACRO_PLAYBACK",
+        "id": "6bcdb4f0-fbf1-45ea-ace3-8f61117f2c7c",
+        "macro": {
+          "action": {
+            "actionId": "discord_voice_mute",
+            "integrationId": "9f1134cfb89202f3"
+          },
+          "type": "ACTION"
+        },
+        "name": "APPLET_DISCORD_VOICE_MUTE"
+      },
+      {
+        "attribute": "EQUALIZER",
+        "equalizer": {
+          "advanced": [
+            0,
+            -0.96,
+            -0.96,
+            1.92,
+            3.6,
+            4.32,
+            3.6,
+            3.6,
+            1.68,
+            0.96
+          ],
+          "deviceType": "HEADSET",
+          "name": "EQUALIZER_COMMUNICATIONS",
+          "simple": [
+            0,
+            0
+          ],
+          "type": "ADVANCED"
+        },
+        "id": "937a09ad-86d3-495c-847a-de859fc59712",
+        "name": "EQUALIZER_COMMUNICATIONS",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Navigation",
+        "id": "c77aa4a3-ecba-4356-a153-c6e56f232a43",
+        "macro": {
+          "actionName": "\u2325RIGHT",
+          "keystroke": {
+            "code": 79,
+            "modifiers": [
+              226
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Go Forward",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "1ce15e3b-9f23-489b-8c4d-37ec254ac273",
+        "macro": {
+          "actionName": "\u2318G",
+          "keystroke": {
+            "code": 10,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Find Again",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "0e197694-6071-4014-8d0f-f73b667f3f05",
+        "macro": {
+          "actionName": "^O",
+          "keystroke": {
+            "code": 18,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "0c47bdef-7302-402d-83f1-94dae0ae7e05",
+        "macro": {
+          "actionName": "\u2318F",
+          "keystroke": {
+            "code": 9,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Find",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "attribute": "PRO_EQUALIZER",
+        "id": "50487783-6987-4160-a2d4-e146f7ac6640",
+        "name": "TSM Bjergsen",
+        "proEqualizer": {
+          "bands": [
+            2,
+            2,
+            -1,
+            4,
+            4
+          ],
+          "deviceType": "HEADSET",
+          "name": "TSM Bjergsen",
+          "tag": "PRO_PRESET",
+          "type": "PRO"
+        },
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "99ad8b2d-d06d-4a3a-951d-872c65862af9",
+        "macro": {
+          "actionName": "\u2325F4",
+          "keystroke": {
+            "code": 61,
+            "modifiers": [
+              226
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Exit Active App",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "5dd6d86a-3cac-4638-ae75-741a660f0032",
+        "macro": {
+          "actionName": "\u2318\u21e7F23",
+          "keystroke": {
+            "code": 114,
+            "modifiers": [
+              227,
+              225
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Copilot",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Editing",
+        "id": "d9a54589-0291-48d7-b520-7d370870da59",
+        "macro": {
+          "actionName": "^W",
+          "keystroke": {
+            "code": 26,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Close tab",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "d06f0a5f-cff8-4ece-9c94-aba204c47044",
+        "macro": {
+          "actionName": "^ESCAPE",
+          "keystroke": {
+            "code": 41,
+            "modifiers": [
+              224
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Start",
+        "readOnly": true
+      },
+      {
+        "attribute": "EXPOSURE_SETTINGS",
+        "deviceSignature": "CAMERA.c920",
+        "exposureSettings": {
+          "exposure": {
+            "mode": "AUTO",
+            "value": 60
+          },
+          "gain": {
+            "mode": "MANUAL",
+            "value": 100
+          },
+          "manualCard": true,
+          "priority": "PRIORITY_EXPOSURE"
+        },
+        "id": "6352c034-8a56-4c6d-b0c9-2a1c09529307",
+        "name": "WEBCAM_EXPOSURE_MANUAL_ADJUSTMENT",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "7c51f415-e3df-43ed-83d2-0978e908d8e3",
+        "macro": {
+          "actionName": "\u2318L",
+          "keystroke": {
+            "code": 15,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Lock PC",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Productivity",
+        "id": "9b55e227-9390-4cc4-be4d-3a013cdbbaa9",
+        "macro": {
+          "actionName": "\u21e7\u2318N",
+          "keystroke": {
+            "code": 17,
+            "modifiers": [
+              225,
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Create New Folder",
+        "profileId": "420fd454-0c36-499d-bde4-146823b16147",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "57fe3eec-1a9b-4869-a3ed-e6c1d87dd16b",
+        "macro": {
+          "actionName": "\u2318=",
+          "keystroke": {
+            "code": 46,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Magnifier",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "e8d0c503-f54a-4c59-acf8-499f25e139c3",
+        "macro": {
+          "actionName": "^\u2318LEFT",
+          "keystroke": {
+            "code": 80,
+            "modifiers": [
+              224,
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Previous Desktop",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "123f83ce-99e3-4d76-832a-55b43a4f955b",
+        "macro": {
+          "actionName": "\u2318E",
+          "keystroke": {
+            "code": 8,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open File Explorer",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "0484c555-64d8-42d2-b1e3-3bf20071439b",
+        "macro": {
+          "actionName": "\u2318TAB",
+          "keystroke": {
+            "code": 43,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Task View",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "b3286cd1-181c-494e-b0a3-9b465990f965",
+        "macro": {
+          "actionName": "^\u2318RIGHT",
+          "keystroke": {
+            "code": 79,
+            "modifiers": [
+              224,
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Next Desktop",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "15068bce-6f92-48fc-9a07-19807cccdfc4",
+        "macro": {
+          "actionName": "\u2318D",
+          "keystroke": {
+            "code": 7,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Hide/Show Desktop",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "8141d6c9-bdb2-4aa3-ae06-ba670b14fa70",
+        "macro": {
+          "actionName": "\u2318G",
+          "keystroke": {
+            "code": 10,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Windows Game Bar",
+        "readOnly": true
+      },
+      {
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "attribute": "MACRO_PLAYBACK",
+        "category": "Windows",
+        "id": "60ca91ac-75a0-4da4-8ac8-7f3b75404271",
+        "macro": {
+          "actionName": "\u2318K",
+          "keystroke": {
+            "code": 14,
+            "modifiers": [
+              227
+            ]
+          },
+          "type": "KEYSTROKE"
+        },
+        "name": "Open Connect Quick Action",
+        "readOnly": true
+      }
+    ]
+  },
+  "crash_reporting": {
+    "enabled": true,
+    "userPrompted": true,
+    "versionNumber": "2020.03"
+  },
+  "created": "2022-08-06T04:26:20.698Z",
+  "device_recommendation_timestamp": 1759350515,
+  "devices/CAMERA.c920/individuality": false,
+  "devices/known": {
+    "knownList": [
+      {
+        "modelId": "g403_wired",
+        "serialNumber": "842549015",
+        "timestamp": "1665001718814",
+        "type": "MOUSE"
+      },
+      {
+        "baseModelId": "c920",
+        "firstSeenTimestamp": "1759350480978",
+        "modelId": "c920",
+        "reportedToAnalytics": true,
+        "serialNumber": "61D1B23F",
+        "signature": "CAMERA.c920.0.61D1B23F",
+        "timestamp": "1792727723571",
+        "type": "CAMERA"
+      },
+      {
+        "baseModelId": "g502x",
+        "firstSeenTimestamp": "1759350484296",
+        "modelId": "g502x",
+        "reportedToAnalytics": true,
+        "serialNumber": "872429568",
+        "signature": "MOUSE.g502x.0.872429568",
+        "timestamp": "1792727726523",
+        "type": "MOUSE"
+      }
+    ]
+  },
+  "first_run_version": "2022.7.290502",
+  "home_layout": "grid",
+  "installed_integrations": [
+    "9f1134cfb89202f3",
+    "ae67192054b1d99f",
+    "7264dd41c5d6c6f6"
+  ],
+  "integration_manager_settings": {
+    "allowLedSdk": true
+  },
+  "language": "en-US",
+  "last_run_version": "2026.6.981214",
+  "lighting_custom_palette": {},
+  "lighting_rgb_to_custom_migration_done": false,
+  "lighting_sleep": true,
+  "lock_notifications_enabled": false,
+  "low_battery_notifications_enabled": false,
+  "marketing_emails_optin_shown": true,
+  "migration_shown": false,
+  "mouse_buttons_swapped": false,
+  "non_interactive_prompted": [],
+  "notifications_enabled": true,
+  "onboarding_shown": true,
+  "profile_setup_popup_shown": false,
+  "profiles": {
+    "profiles": [
+      {
+        "activeForApplication": true,
+        "applicationId": "420fd454-0c36-499d-bde4-146823b16147",
+        "assignments": [
+          {
+            "cardId": "79431a67-7ce0-4be3-a710-f7a71ef23493",
+            "slotId": "g403-1_mouse_settings"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-040400000000",
+            "slotId": "g403-1_g6_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g403-1_g2_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-020400000000",
+            "slotId": "g403-1_g4_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g403-1_g6_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-020100000000",
+            "slotId": "g403-1_g1_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g403-1_g3_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-020200000000",
+            "slotId": "g403-1_g2_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g403-1_g1_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g403-1_g4_m1_shifted"
+          },
+          {
+            "cardId": "9b85425b-8c71-4b15-808c-1206c0830000",
+            "slotId": "g403-1_lighting_setting_firmware"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g403-1_g5_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-020300000000",
+            "slotId": "g403-1_g3_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-020500000000",
+            "slotId": "g403-1_g5_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g10_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-040900000000",
+            "slotId": "g502x_scroll1_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-040100000000",
+            "slotId": "g502x_g10_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g3_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g1_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-014b00000000",
+            "slotId": "g502x_g6_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_scroll1_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-040b00000000",
+            "slotId": "g502x_g7_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g5_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g4_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-014e00000000",
+            "slotId": "g502x_g4_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-040a00000000",
+            "slotId": "g502x_scroll2_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g8_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090100000000",
+            "slotId": "g502x_g9_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g2_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-040300000000",
+            "slotId": "g502x_g5_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g6_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_scroll2_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-040c00000000",
+            "slotId": "g502x_g8_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-020300000000",
+            "slotId": "g502x_g3_m1"
+          },
+          {
+            "cardId": "38b86aed-cceb-4815-a186-b767a0262be8",
+            "slotId": "g502x_mouse_settings"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-020100000000",
+            "slotId": "g502x_g1_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g9_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-020200000000",
+            "slotId": "g502x_g2_m1"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g11_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-090700000000",
+            "slotId": "g502x_g7_m1_shifted"
+          },
+          {
+            "cardId": "0f82f693-5b78-4cf5-867e-040200000000",
+            "slotId": "g502x_g11_m1"
+          },
+          {
+            "cardId": "ec509792-b9df-419a-b837-d0ba28097179",
+            "slotId": "CAMERA.c920.0.61D1B23F:IMAGE_SETTINGS"
+          },
+          {
+            "cardId": "83497f87-ebc0-4a17-b7f7-5aec5e882a88",
+            "slotId": "CAMERA.c920.0.61D1B23F:CROP_SETTINGS"
+          },
+          {
+            "cardId": "7473abfd-4769-4dfc-9fc0-4a72aad20e86",
+            "slotId": "CAMERA.c920.0.61D1B23F:EXPOSURE_SETTINGS"
+          },
+          {
+            "cardId": "d84611d8-9fab-4e7d-85d1-668e96e0a055",
+            "slotId": "CAMERA.c920.0.61D1B23F:FOCUS_SETTINGS"
+          },
+          {
+            "cardId": "508b21c5-9c73-4350-98b4-858c0016119e",
+            "slotId": "CAMERA.c920.0.61D1B23F:WEBCAM_MICROPHONE_SETTINGS"
+          }
+        ],
+        "id": "420fd454-0c36-499d-bde4-146823b16147",
+        "name": "PROFILE_NAME_DEFAULT"
+      }
+    ]
+  },
+  "profiles/auto_switching/enabled": false,
+  "profiles/auto_switching/migrated": true,
+  "profiles/auto_switching/s_last_used_profile": "420fd454-0c36-499d-bde4-146823b16147",
+  "release_notes_build_id": "876194",
+  "seen_coach_marks": [
+    "coach-mark-logo"
+  ],
+  "settings_transferred": true,
+  "webcam_in_use": false
+}

@@ -3,6 +3,10 @@
 
 [bootstrap.packages]
 "brew-cask:flux-app" = { adopt = true } # installed by hand before mise managed it
+# Logitech G HUB: G502 X mouse and C920 webcam. Its settings live in a SQLite
+# database, so they're carried over with `mise run ghub-save` / `ghub-restore`
+# (see README), not as a dotfile.
+"brew-cask:logitech-g-hub" = "latest"
 
 # f.lux. Location is left out on purpose (this repo is public); set it per Mac.
 [bootstrap.macos.defaults."org.herf.Flux"]
@@ -11,3 +15,13 @@ lateColorTemp = 1600.0 # bedtime
 wakeTime = 420 # minutes after midnight (7:00)
 steptime = 28.0 # transition speed
 darkTheme = 0
+
+[tasks.ghub-save]
+description = "Snapshot G HUB mouse/webcam settings into logitech/ghub-settings.json"
+tools.python = "3.13"
+run = "bin/ghub-settings save"
+
+[tasks.ghub-restore]
+description = "Quit G HUB, restore its settings from logitech/ghub-settings.json, reopen it"
+tools.python = "3.13"
+run = "bin/ghub-settings restore"

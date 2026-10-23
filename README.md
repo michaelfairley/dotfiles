@@ -103,12 +103,31 @@ machine-local `~/.config/mise/miserc.local.toml` (never in the repo):
 env = ["desktop"]
 ```
 
-`mise.desktop.toml` holds desktop-only setup (currently f.lux). To add a
+`mise.desktop.toml` holds desktop-only setup (f.lux and the Logitech apps;
+see below). To add a
 laptop-only module, create `mise.laptop.toml` and set `env = ["laptop"]` on the
 laptop. Check with `mise config` (lists the files that loaded) and preview the
 other machine with `mise -E <name> bootstrap status`. Dropping a module from
 `env` stops applying it but leaves its files and settings in place;
 `mise bootstrap unapply <name> --dry-run` shows what it would remove.
+
+**Logitech G HUB (desktop).** G HUB (`lghub.app`, the `logitech-g-hub` cask
+in `mise.desktop.toml`) configures the G502 X mouse and the C920 webcam,
+including the camera's exposure, focus, and crop. Its settings are one JSON
+document in a SQLite database that it rewrites constantly, so instead of a
+dotfile there's a snapshot, `logitech/ghub-settings.json`, managed by
+`bin/ghub-settings`:
+
+- after changing anything in G HUB: `mise run ghub-save`, review `git diff`,
+  commit;
+- on a fresh desktop, after bootstrap installs G HUB: open G HUB once so it
+  creates its database, then `mise run ghub-restore` (quits G HUB, backs up
+  `settings.db`, writes the snapshot, reopens G HUB).
+
+The snapshot leaves out G HUB's `analytics` host ID but keeps device serial
+numbers, which G HUB needs to match profiles to devices. Logi Tune isn't
+managed: G HUB covers the webcam, and Logi Tune's settings are encrypted per
+machine and can't be carried over anyway.
 
 **Set up a new Mac.** Install Homebrew and mise, then run the line for its
 role. It records the role in `~/.config/mise/miserc.local.toml` (so every later

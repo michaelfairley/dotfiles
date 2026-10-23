@@ -1,0 +1,105 @@
+#!/usr/bin/env python3
+"""Save or restore Logitech G HUB settings (mouse and webcam profiles).
+
+G HUB keeps all of its settings in one JSON document inside a SQLite database,
+~/Library/Application Support/lghub/settings.db, which it rewrites constantly,
+so it can't be linked or merged like other dotfiles.
+
+  save     write the current settings to logitech/ghub-settings.json
+  restore  quit G HUB, write the snapshot back, and reopen G HUB
+
+Per-install identifiers (LOCAL_ONLY) are never saved, and restore keeps this
+machine's values for them. Restore backs up settings.db first. Set LGHUB_DIR to
+work on a copy of the lghub directory instead (G HUB is then left alone).
+"""
+
+import json
+import os
+import shutil
+import sqlite3
+import subprocess
+import sys
+import time
+from datetime import datetime
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parent.parent
+SNAPSHOT = REPO / "logitech" / "ghub-settings.json"
+LIVE_DIR = Path("~/Library/Application Support/lghub").expanduser()
+DIR = Path(os.environ["LGHUB_DIR"]).expanduser() if "LGHUB_DIR" in os.environ else LIVE_DIR
+DB = DIR / "settings.db"
+APP = "/Applications/lghub.app"
+LOCAL_ONLY = ["analytics"]
+
+
+def read_settings():
+    con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
+    try:
+        row_id, blob = con.execute("select _id, file from data order by _id desc limit 1").fetchone()
+    finally:
+        con.close()
+    return row_id, json.loads(blob)
+
+
+def ghub_running():
+    return subprocess.run(["pgrep", "-f", f"{APP}/Contents/MacOS/"], capture_output=True).returncode == 0
+
+
+def quit_ghub():
+    subprocess.run(["pkill", "-f", f"{APP}/Contents/MacOS/"])
+    for _ in range(20):
+        if not ghub_running():
+            return
+        time.sleep(0.5)
+    sys.exit("G HUB is still running; quit it from its menu bar icon and rerun.")
+
+
+def save():
+    _, settings = read_settings()
+    for key in LOCAL_ONLY:
+        settings.pop(key, None)
+    SNAPSHOT.parent.mkdir(exist_ok=True)
+    SNAPSHOT.write_text(json.dumps(settings, indent=2, sort_keys=True) + "\n")
+    print(f"Saved G HUB settings to {SNAPSHOT.relative_to(REPO)}; review with `git diff` and commit.")
+
+
+def restore():
+    if not DB.exists():
+        sys.exit("G HUB hasn't created its settings yet: open G HUB once, quit it, then rerun.")
+    live = DIR == LIVE_DIR
+    if live:
+        quit_ghub()
+
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    for suffix in ("", "-wal", "-shm"):
+        src = DB.with_name(DB.name + suffix)
+        if src.exists():
+            shutil.copy2(src, src.with_name(f"{src.name}.before-restore-{stamp}"))
+
+    row_id, current = read_settings()
+    settings = json.loads(SNAPSHOT.read_text())
+    for key in LOCAL_ONLY:
+        if key in current:
+            settings[key] = current[key]
+
+    con = sqlite3.connect(DB)
+    try:
+        with con:
+            con.execute("update data set file = ? where _id = ?", (json.dumps(settings, indent=4).encode(), row_id))
+    finally:
+        con.close()
+    print(f"Restored G HUB settings (backup: {DB.name}.before-restore-{stamp}).")
+
+    if live:
+        subprocess.run(["open", APP])
+
+
+def main():
+    commands = {"save": save, "restore": restore}
+    if len(sys.argv) != 2 or sys.argv[1] not in commands:
+        sys.exit(f"usage: {Path(sys.argv[0]).name} save|restore")
+    commands[sys.argv[1]]()
+
+
+if __name__ == "__main__":
+    main()
