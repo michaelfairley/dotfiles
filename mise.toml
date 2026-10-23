@@ -14,6 +14,23 @@ description = "Show local changes to merged app settings that may belong in snip
 tools.python = "3.13"
 run = "bin/settings-drift"
 
+# Every Mac must pick exactly one role in ~/.config/mise/miserc.local.toml
+# (env = ["desktop"] or env = ["laptop"]); otherwise its module would be
+# silently skipped. Runs before bootstrap changes anything.
+[bootstrap.hooks]
+pre-packages = '''
+envs=$(printf %s "{% if mise_env is defined %}{{ mise_env | join(sep=",") }}{% endif %}" | tr -d "[:space:]")
+case ",$envs," in
+  *,desktop,*laptop,* | *,laptop,*desktop,*) roles=2 ;;
+  *,desktop,* | *,laptop,*) roles=1 ;;
+  *) roles=0 ;;
+esac
+if [ "$roles" -ne 1 ]; then
+  echo 'Select exactly one of desktop or laptop: put env = ["desktop"] or env = ["laptop"] in ~/.config/mise/miserc.local.toml, then rerun.' >&2
+  exit 1
+fi
+'''
+
 [dotfiles]
 "~/.emacs" = { source = ".emacs" }
 "~/.emacs.d" = { source = ".emacs.d" }

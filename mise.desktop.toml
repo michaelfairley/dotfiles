@@ -1,0 +1,13 @@
+# Desktop-only setup. Loaded only on machines that select the "desktop"
+# environment in ~/.config/mise/miserc.local.toml (see README).
+
+[bootstrap.packages]
+"brew-cask:flux-app" = { adopt = true } # installed by hand before mise managed it
+
+# f.lux. Location is left out on purpose (this repo is public); set it per Mac.
+[bootstrap.macos.defaults."org.herf.Flux"]
+nightColorTemp = 3400
+lateColorTemp = 1600.0 # bedtime
+wakeTime = 420 # minutes after midnight (7:00)
+steptime = 28.0 # transition speed
+darkTheme = 0

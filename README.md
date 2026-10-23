@@ -94,15 +94,39 @@ with `host = "current"` for `-currentHost` preferences. Check with
 `mise bootstrap macos defaults apply --dry-run`, apply, then
 `killall Dock Finder SystemUIServer`.
 
-**Make the two Macs differ.** Use a config environment: put the differences in
-`mise.laptop.toml` and set `export MISE_ENV=laptop` in that Mac's local
-`~/.zshrc` (below the managed block). Packages can also take `env = "laptop"`.
+**Make the two Macs differ.** Machine-specific setup goes in a module file,
+`mise.<name>.toml`, which loads only on Macs that select it in the
+machine-local `~/.config/mise/miserc.local.toml` (never in the repo):
 
-**Set up a new Mac.** Install Homebrew and mise, then:
+```toml
+# ~/.config/mise/miserc.local.toml on the desktop
+env = ["desktop"]
+```
+
+`mise.desktop.toml` holds desktop-only setup (currently f.lux). To add a
+laptop-only module, create `mise.laptop.toml` and set `env = ["laptop"]` on the
+laptop. Check with `mise config` (lists the files that loaded) and preview the
+other machine with `mise -E <name> bootstrap status`. Dropping a module from
+`env` stops applying it but leaves its files and settings in place;
+`mise bootstrap unapply <name> --dry-run` shows what it would remove.
+
+**Set up a new Mac.** Install Homebrew and mise, then run the line for its
+role. It records the role in `~/.config/mise/miserc.local.toml` (so every later
+`mise bootstrap` uses it) and bootstraps from the repo:
 
 ```sh
-mise bootstrap --from git@github.com:michaelfairley/dotfiles.git --from-dir ~/p/dotfiles
+# desktop
+mkdir -p ~/.config/mise && echo 'env = ["desktop"]' > ~/.config/mise/miserc.local.toml && mise bootstrap --from git@github.com:michaelfairley/dotfiles.git --from-dir ~/p/dotfiles
+
+# laptop
+mkdir -p ~/.config/mise && echo 'env = ["laptop"]' > ~/.config/mise/miserc.local.toml && mise bootstrap --from git@github.com:michaelfairley/dotfiles.git --from-dir ~/p/dotfiles
 ```
+
+A `pre-packages` hook in `mise.toml` stops any bootstrap, before it changes
+anything, unless exactly one of `desktop` or `laptop` is selected. A role with
+no module file (there's no `mise.laptop.toml` yet) just loads nothing extra.
+Hooks don't see `$MISE_ENV`; the hook reads the `mise_env` template variable
+instead.
 
 If files already exist where links should go, bootstrap refuses them: check
 `mise dot diff`, keep whichever version you want in the repo, then run
