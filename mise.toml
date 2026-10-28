@@ -142,6 +142,7 @@ adopt = true
 "brew:jq" = "latest"
 "brew:magic-wormhole" = "latest"
 "brew:mas" = "latest"
+"brew:ripgrep" = "latest"
 "brew:watch" = "latest"
 "brew:wget" = "latest"
 "brew:yt-dlp" = "latest"
