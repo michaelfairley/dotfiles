@@ -39,6 +39,7 @@ fi
 "~/.psqlrc" = { source = ".psqlrc" }
 "~/.bundle/config" = { source = "bundle/config" }
 "~/.config/ghostty/config" = { source = "ghostty/config" }
+"~/.config/rex/init.lua" = { source = "rex/init.lua" }
 "~/.config/zed/settings.json" = { source = "zed/settings.json" }
 "~/.config/zed/tasks.json" = { source = "zed/tasks.json" }
 "~/.claude/CLAUDE.md" = { source = "claude/CLAUDE.md" }

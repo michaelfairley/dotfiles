@@ -26,7 +26,7 @@ the other Mac.
 
 | Kind | Examples | Mechanism | To change it |
 |---|---|---|---|
-| Linked files | `.emacs`, `.emacs.d`, `.gitignore`, `.inputrc`, `.psqlrc`, `bundle/config`, `ghostty/config`, `zed/*.json`, `claude/CLAUDE.md` | `[dotfiles]` entry, symlink into `~` | Edit the file in the repo (or in the app; it's the same file) |
+| Linked files | `.emacs`, `.emacs.d`, `.gitignore`, `.inputrc`, `.psqlrc`, `bundle/config`, `ghostty/config`, `rex/init.lua`, `zed/*.json`, `claude/CLAUDE.md` | `[dotfiles]` entry, symlink into `~` | Edit the file in the repo (or in the app; it's the same file) |
 | Shell and git config | `.zshrc`, `.bashrc`, `.shrc`, `.gitconfig` | Not linked. `~/.zshrc`, `~/.bashrc` and `~/.gitconfig` are machine-local files; mise owns only a marked `mise:dotfiles` block at the top of each (from `snippets/zshrc` etc.) that loads the repo version | Edit the repo file |
 | Merged app settings | Claude Code, Codex, Gemini | `merge` entries: mise owns only the keys in `snippets/*-settings*.json` / `snippets/codex-config*.toml`; the app owns the rest of the file | Edit the snippet, not the app |
 | Packages | `[bootstrap.packages]` | `brew:`, `brew-cask:`, `mas:` entries | `mise bootstrap packages use brew:foo` from this directory |
