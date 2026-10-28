@@ -7,6 +7,7 @@
 .emacs.d/elpa/archives
 .emacs.d/elpa/gnupg
 .emacs.d/transient
+.emacs.d/eln-cache
 *.blend[0-9]
 .dir-locals-2.el
 .emacs.d/.lsp-session-v1
