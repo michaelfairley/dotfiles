@@ -41,12 +41,14 @@ def read_settings():
     return row_id, json.loads(blob)
 
 
+# Only this user's processes: lghub_updater runs as root, outlives the app, and
+# never touches settings.db.
 def ghub_running():
-    return subprocess.run(["pgrep", "-f", f"{APP}/Contents/MacOS/"], capture_output=True).returncode == 0
+    return subprocess.run(["pgrep", "-U", str(os.getuid()), "-f", f"{APP}/Contents/MacOS/"], capture_output=True).returncode == 0
 
 
 def quit_ghub():
-    subprocess.run(["pkill", "-f", f"{APP}/Contents/MacOS/"])
+    subprocess.run(["pkill", "-U", str(os.getuid()), "-f", f"{APP}/Contents/MacOS/"])
     for _ in range(20):
         if not ghub_running():
             return
