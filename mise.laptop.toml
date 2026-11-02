@@ -1,0 +1,5 @@
+# Laptop-only setup. Loaded only on machines that select the "laptop"
+# environment in ~/.config/mise/miserc.local.toml (see README).
+
+[bootstrap.macos.defaults.NSGlobalDomain]
+"com.apple.swipescrolldirection" = true # natural scrolling on, for the trackpad

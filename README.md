@@ -87,6 +87,10 @@ the entry into `mise.toml` and installs it. To find things installed with plain
 `[bootstrap.brew] adopt = true` is set, so a cask whose app was already
 installed by hand takes that copy over instead of replacing it (keeping its
 macOS permissions and version); add `adopt = false` to a cask to replace it.
+A cask mise can't install (`steamcmd`, whose preflight step it doesn't support)
+can't be declared there, because `plan` and `status` abort on a Mac without it.
+Install it with Homebrew from the `post-packages` hook in `mise.toml` instead;
+mise leaves Homebrew-installed casks alone.
 
 **Add a macOS setting.** Change it in System Settings and compare
 `defaults read <domain>` before and after (or run `defaults export <domain> -`
@@ -106,10 +110,11 @@ machine-local `~/.config/mise/miserc.local.toml` (never in the repo):
 env = ["desktop"]
 ```
 
-`mise.desktop.toml` holds desktop-only setup (f.lux and the Logitech apps;
-see below). To add a
-laptop-only module, create `mise.laptop.toml` and set `env = ["laptop"]` on the
-laptop. Check with `mise config` (lists the files that loaded) and preview the
+`mise.desktop.toml` holds desktop-only setup (f.lux, the Logitech apps, see
+below, and natural scrolling off for the mouse). `mise.laptop.toml` holds
+laptop-only setup (natural scrolling on for the trackpad). macOS has one
+scrolling setting for both, so each module sets it explicitly.
+Check with `mise config` (lists the files that loaded) and preview the
 other machine with `mise -E <name> bootstrap status`. Dropping a module from
 `env` stops applying it but leaves its files and settings in place;
 `mise bootstrap unapply <name> --dry-run` shows what it would remove.
@@ -145,10 +150,8 @@ mkdir -p ~/.config/mise && echo 'env = ["laptop"]' > ~/.config/mise/miserc.local
 ```
 
 A `pre-packages` hook in `mise.toml` stops any bootstrap, before it changes
-anything, unless exactly one of `desktop` or `laptop` is selected. A role with
-no module file (there's no `mise.laptop.toml` yet) just loads nothing extra.
-Hooks don't see `$MISE_ENV`; the hook reads the `mise_env` template variable
-instead.
+anything, unless exactly one of `desktop` or `laptop` is selected. Hooks don't
+see `$MISE_ENV`; the hook reads the `mise_env` template variable instead.
 
 If files already exist where links should go, bootstrap refuses them: check
 `mise dot diff`, keep whichever version you want in the repo, then run

@@ -8,6 +8,9 @@
 # (see README), not as a dotfile.
 "brew-cask:logitech-g-hub" = "latest"
 
+[bootstrap.macos.defaults.NSGlobalDomain]
+"com.apple.swipescrolldirection" = false # natural scrolling off, for the mouse
+
 # f.lux. Location is left out on purpose (this repo is public); set it per Mac.
 [bootstrap.macos.defaults."org.herf.Flux"]
 nightColorTemp = 3400
