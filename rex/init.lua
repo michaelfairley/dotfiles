@@ -22,13 +22,27 @@ local function focused_dir(ctx)
   return nil
 end
 
+-- The root of the git repository containing dir, or dir itself when it isn't
+-- in one. From a linked worktree (such as a Claude one under
+-- .claude/worktrees/), this is the main repository's root: the common git dir
+-- is the main repo's .git. A submodule's common dir is under its
+-- superproject's .git/modules/, so that case falls back to --show-toplevel.
+local function git_root(dir)
+  local r = rex.exec({ "git", "rev-parse", "--path-format=absolute",
+    "--git-common-dir", "--show-toplevel" }, { cwd = dir, timeout = 5 })
+  if r == nil or not r.ok then return dir end
+  local common, toplevel = r.stdout:match("^([^\n]+)\n([^\n]+)")
+  if common == nil then return dir end
+  return common:match("^(.+)/%.git$") or toplevel
+end
+
 rex.action{
   name  = "claude_worktree_session",
   title = "New Claude Worktree Session",
-  description = "Open a session in the focused pane's directory and run claude -w with a name you type.",
+  description = "Open a session at the git root (the main repo's, from a worktree) of the focused pane's directory and run claude -w with a name you type.",
   keywords = "claude worktree session",
   run   = function(ctx, args)
-    local dir = focused_dir(ctx) or claude_session_fallback_dir
+    local dir = git_root(focused_dir(ctx) or claude_session_fallback_dir)
     local s, err = rex.call("session.create", {
       label = "claude",
       initial_windows = { {
