@@ -13,3 +13,22 @@ path_prepend() { if [ -d "$1" ]; then PATH="$1:$PATH"; fi; }
 path_prepend "$HOME/.node_modules/bin"
 path_prepend "$HOME/.local/bin"
 export PATH
+
+# Start Claude Code in a new worktree, naming the Rex session after it. Asks
+# for the name when none is given. Rex's "New Claude Worktree Session" action
+# (rex/init.lua) runs this in the session it opens.
+claude-session() {
+  local name="$1"
+  if [ -z "$name" ]; then
+    printf 'Session and worktree name: '
+    read -r name || return 1
+  fi
+  if [ -z "$name" ]; then
+    echo "claude-session: no name given" >&2
+    return 1
+  fi
+  if [ -n "$REX_SESSION" ]; then
+    rex session rename "$REX_SESSION" "$name" >/dev/null
+  fi
+  claude -w "$name"
+}
