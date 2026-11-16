@@ -54,6 +54,10 @@ rex.action{
     })
     if err ~= nil then error(err, 0) end
     if ctx.client_id ~= nil then
+      -- Over a remote connection the app may not have heard about the new
+      -- session yet, and session.select fails with "not found on this
+      -- server". Refreshing first makes it fetch the session list.
+      rex.client.queue("session.refresh")
       rex.client.queue("session.select", { session_id = s.session_id })
     end
     return { session_id = s.session_id, cwd = dir }
